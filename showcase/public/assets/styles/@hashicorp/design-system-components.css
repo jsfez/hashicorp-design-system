@@ -7607,12 +7607,6 @@ button.hds-button[href]::after {
   background: none;
   border: var(--hds-form-control-border-width) solid var(--hds-form-control-base-border-color-default);
 }
-.hds-form-select[multiple]:hover, .hds-form-select[size]:hover {
-  border-color: var(--hds-form-control-base-border-color-hover);
-}
-.hds-form-select[multiple]:disabled, .hds-form-select[size]:disabled {
-  border-color: var(--hds-form-control-disabled-border-color);
-}
 .hds-form-select[multiple] option, .hds-form-select[size] option {
   margin: 2px auto;
   border-radius: var(--hds-border-radius-x-small);
