@@ -15,31 +15,31 @@
 .hds-form-text-input {
   width: 100%;
   max-width: 100%;
-  padding: var(--hds-form-control-padding);
-  color: var(--hds-form-control-base-foreground-color);
-  background-color: var(--hds-form-control-base-surface-color-default);
-  border: var(--hds-form-control-border-width) solid var(--hds-form-control-base-border-color-default);
-  border-radius: var(--hds-form-control-border-radius);
-  box-shadow: var(--hds-elevation-inset-box-shadow);
+  padding: var(--token-form-control-padding);
+  color: var(--token-form-control-base-foreground-color);
+  background-color: var(--token-form-control-base-surface-color-default);
+  border: var(--token-form-control-border-width) solid var(--token-form-control-base-border-color-default);
+  border-radius: var(--token-form-control-border-radius);
+  box-shadow: var(--token-elevation-inset-box-shadow);
 
   @include hds-apply-only-if-carbon() {
     min-height: 40px;
-    padding: 0 var(--hds-form-control-padding);
+    padding: 0 var(--token-form-control-padding);
     // Carbon's text input has only a bottom border
-    border-width: 0 0 var(--hds-form-control-border-width) 0;
+    border-width: 0 0 var(--token-form-control-border-width) 0;
   }
 
   // PLACEHOLDER
 
   &::placeholder {
-    color: var(--hds-form-control-base-placeholder-foreground-color-default);
+    color: var(--token-form-control-base-placeholder-foreground-color-default);
   }
 
   // STATUS
 
   &:hover,
   &.mock-hover {
-    border-color: var(--hds-form-control-base-border-color-hover);
+    border-color: var(--token-form-control-base-border-color-hover);
   }
 
   // focus (same for all the states)
@@ -47,86 +47,51 @@
   &:focus-visible,
   &.mock-focus {
     @include hds-focus-ring-basic();
-    border-color: var(--hds-color-focus-action-internal);
+    border-color: var(--token-color-focus-action-internal);
   }
 
   // READONLY
 
   &:read-only {
-    color: var(--hds-form-control-readonly-foreground-color);
-    background-color: var(--hds-form-control-readonly-surface-color);
-    border-color: var(--hds-form-control-readonly-border-color);
+    color: var(--token-form-control-readonly-foreground-color);
+    background-color: var(--token-form-control-readonly-surface-color);
+    border-color: var(--token-form-control-readonly-border-color);
     box-shadow: none;
   }
 
   // DISABLED
 
   &:disabled {
-    color: var(--hds-form-control-disabled-foreground-color);
-    background-color: var(--hds-form-control-disabled-surface-color);
-    border-color: var(--hds-form-control-disabled-border-color);
+    color: var(--token-form-control-disabled-foreground-color);
+    background-color: var(--token-form-control-disabled-surface-color);
+    border-color: var(--token-form-control-disabled-border-color);
     box-shadow: none;
     cursor: not-allowed;
 
     &::placeholder {
-      color: var(--hds-form-control-base-placeholder-foreground-color-disabled);
+      color: var(--token-form-control-base-placeholder-foreground-color-disabled);
     }
   }
 
   // INVALID
 
   &.hds-form-text-input--is-invalid {
-    border-color: var(--hds-form-control-invalid-border-color-default);
-
-    // TODO: This needs to be simplified! May be better just to hard code all the SVG icon colors vs. using masking...
-    // Note: The element-wrapper parent is used to position the Carbon themes invalid icon over the text input
-    @at-root .hds-form-text-input__element-wrapper:has(#{&}) {
-      // Carbon themes invalid icon
-      @include hds-apply-only-if-carbon() {
-        position: relative;
-
-        &::after {
-          // Note: We use a mask with a background color instead of a background image so that the color of the icon can be changed as needed
-          position: absolute;
-          top: 0;
-          right: 1rem;
-          bottom: 0;
-          display: block;
-          width: 16px;
-          height: 16px;
-          margin: auto 0;
-          background-color: var(--hds-form-control-invalid-border-color-default);
-          content: "";
-          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16' %3E%3Cpath d='M8,1C4.2,1,1,4.2,1,8s3.2,7,7,7s7-3.1,7-7S11.9,1,8,1z M7.5,4h1v5h-1C7.5,9,7.5,4,7.5,4z M8,12.2	c-0.4,0-0.8-0.4-0.8-0.8s0.3-0.8,0.8-0.8c0.4,0,0.8,0.4,0.8,0.8S8.4,12.2,8,12.2z'%3E%3C/path%3E%3Cpath d='M7.5,4h1v5h-1C7.5,9,7.5,4,7.5,4z M8,12.2c-0.4,0-0.8-0.4-0.8-0.8s0.3-0.8,0.8-0.8	c0.4,0,0.8,0.4,0.8,0.8S8.4,12.2,8,12.2z' data-icon-path='inner-path' opacity='0'%3E%3C/path%3E%3C/svg%3E");
-          mask-size: cover;
-        }
-
-        // Add space for invalid icon
-        .hds-form-text-input--is-invalid {
-          padding-right: 2.5rem;
-
-          // make space for invalid icon + search cancel button
-          &[type="search"] {
-            padding-right: calc(2.5rem + 40px);
-          }
-        }
-      }
-    }
+    border-color: var(--token-form-control-invalid-border-color-default);
 
     @include hds-apply-only-if-carbon() {
-      outline: 2px solid var(--hds-form-control-invalid-border-color-default);
+      outline: 2px solid var(--token-form-control-invalid-border-color-default);
       outline-offset: -2px;
     }
 
     &:hover,
     &.mock-hover {
-      border-color: var(--hds-form-control-invalid-border-color-hover);
+      border-color: var(--token-form-control-invalid-border-color-hover);
     }
 
     &:focus-visible,
     &.mock-focus {
-      border-color: var(--hds-color-focus-critical-internal);
-      outline-color: var(--hds-color-focus-critical-external);
+      border-color: var(--token-color-focus-critical-internal);
+      outline-color: var(--token-color-focus-critical-external);
     }
   }
 }
@@ -141,13 +106,13 @@
 // PASSWORD
 
 .hds-form-text-input--has-visibility-toggle {
-  padding-right: calc(var(--hds-form-control-padding) + 24px);
+  padding-right: calc(var(--token-form-control-padding) + 24px);
 }
 
 .hds-form-text-input__visibility-toggle {
   position: absolute;
   top: 0;
-  right: calc(var(--hds-form-control-padding) - var(--hds-form-control-border-width));
+  right: calc(var(--token-form-control-padding) - var(--token-form-control-border-width));
   bottom: 0;
   margin: auto 0;
 }
@@ -161,7 +126,7 @@
   &[type="month"],
   &[type="week"] {
     // browsers set a specific width for these controls, we want to keep it in the HDS theme
-    width: var(--hds-form-text-input-date-time-width);
+    width: var(--token-form-text-input-date-time-width);
 
     // show the native icon dimmed if disabled (hidden in Chrome)
     &:disabled::-webkit-calendar-picker-indicator {
@@ -169,18 +134,8 @@
       opacity: 0.5;
 
       @include hds-apply-only-if-carbon() {
-        // This sets the color of the icon for masked icons
-        background-color: var(--hds-color-foreground-disabled);
-        opacity: 1;
-      }
-    }
-
-    @include hds-apply-only-if-carbon() {
-      &[type="date"],
-      &[type="datetime-local"],
-      &[type="month"],
-      &[type="week"] {
-        max-width: 18rem;
+        // hide the icon in disabled state for Carbon themes
+        opacity: 0;
       }
     }
 
@@ -190,13 +145,6 @@
       visibility: visible;
 
       @include hds-apply-only-if-carbon() {
-        /*
-          Note: Carbon is actually using this color:
-            var(--cds-icon-disabled, hsla(0, 0%, 9%, .25))
-            --cds-icon-disabled = rgba(22, 22, 22, 0.25)
-        */
-        // This sets the color of the icon
-        background-color: var(--hds-color-foreground-faint);
         opacity: 1;
       }
     }
@@ -209,40 +157,30 @@
   &[type="month"],
   &[type="week"] {
     &::-webkit-calendar-picker-indicator {
-      background-image: var(--hds-form-text-input-background-image-data-url-date);
+      background-image: var(--token-form-text-input-background-image-data-url-date-default);
       background-position: center center;
-      background-size: var(--hds-form-text-input-background-image-size);
+      background-size: var(--token-form-text-input-background-image-size);
 
-      // TODO: Using masking allows us to easily change the color of the icon for use in disabled and readonly states, etc. but results in more complex css code
-      // It may be better to add additional tokens instead for the disabled and readonly state icons, etc. instead
       @include hds-apply-only-if-carbon() {
-        // Note: We use a mask with a background color instead of a background image so that the color of the icon can be changed as needed
-        width: var(--hds-form-text-input-background-image-size);
-        height: var(--hds-form-text-input-background-image-size);
-        padding: 0; // remove padding to prevent stretching the image
-        background-color: var(--hds-form-control-base-foreground-color);
-        background-image: none;
-        mask-image: var(--hds-form-text-input-background-image-data-url-date);
-        mask-size: cover;
+        // We use the native browser default icon
+        background-image: revert;
+        background-position: revert;
+        background-size: revert;
       }
     }
   }
 
   &[type="time"] {
     &::-webkit-calendar-picker-indicator {
-      background-image: var(--hds-form-text-input-background-image-data-url-time);
+      background-image: var(--token-form-text-input-background-image-data-url-time);
       background-position: center center;
-      background-size: var(--hds-form-text-input-background-image-size);
+      background-size: var(--token-form-text-input-background-image-size);
 
       @include hds-apply-only-if-carbon() {
-        // Note: We use a mask with a background color instead of a background image so that the color of the icon can be changed as needed
-        width: var(--hds-form-text-input-background-image-size);
-        height: var(--hds-form-text-input-background-image-size);
-        padding: 0; // remove padding to prevent stretching the image
-        background-color: var(--hds-form-control-base-foreground-color);
-        background-image: none;
-        mask-image: var(--hds-form-text-input-background-image-data-url-time);
-        mask-size: cover;
+        // We use the native browser default icon
+        background-image: revert;
+        background-position: revert;
+        background-size: revert;
       }
     }
   }
@@ -250,11 +188,11 @@
 
 // SEARCH
 .hds-form-text-input[type="search"] {
-  padding-left: calc(var(--hds-form-control-padding) + 24px); // extra space for the icon
-  background-image: var(--hds-form-text-input-background-image-data-url-search-default);
+  padding-left: calc(var(--token-form-control-padding) + 24px); // extra space for the icon
+  background-image: var(--token-form-text-input-background-image-data-url-search-default);
   background-repeat: no-repeat;
-  background-position: var(--hds-form-text-input-background-image-position-x) 50%;
-  background-size: var(--hds-form-text-input-background-image-size);
+  background-position: var(--token-form-text-input-background-image-position-x) 50%;
+  background-size: var(--token-form-text-input-background-image-size);
 
   // make space for invalid icon + search cancel button
   &.hds-form-text-input--is-invalid {
@@ -266,23 +204,24 @@
   @include hds-apply-only-if-carbon() {
     // make space for search cancel button
     // TODO:
-    // * Create a new token for the search cancel button width and use it here
+    // * Create a new token for the search cancel button width and use it here,
+    // * Add extra padding to space out the input text from the button
     // * BUG: padding being overridden in the invalid state (& the invalid icon is overlapping the search cancel button)
     padding-right: 40px;
 
     &:disabled {
-      background-image: var(--hds-form-text-input-background-image-data-url-search-disabled);
+      background-image: var(--token-form-text-input-background-image-data-url-search-disabled);
     }
   }
 
   // SEARCH CANCEL BUTTON
   &::-webkit-search-cancel-button {
-    width: var(--hds-form-text-input-background-image-size);
-    height: var(--hds-form-text-input-background-image-size);
-    background-image: var(--hds-form-text-input-background-image-data-url-search-cancel);
+    width: var(--token-form-text-input-background-image-size);
+    height: var(--token-form-text-input-background-image-size);
+    background-image: var(--token-form-text-input-background-image-data-url-search-cancel);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: var(--hds-form-text-input-background-image-size);
+    background-size: var(--token-form-text-input-background-image-size);
     // stylelint-disable-next-line property-no-vendor-prefix
     -webkit-appearance: none;
   }
@@ -300,12 +239,11 @@
       // For Showcase examples we are setting the mock hover state on the parent input
       &.mock-hover {
         &::-webkit-search-cancel-button {
-          background-color: var(--hds-color-surface-interactive-hover);
+          background-color: var(--token-color-surface-interactive-hover);
         }
       }
 
       // Display native search cancel button in carbonized non-disabled, non-readonly search input
-      // Note: masking won't work on the native search cancel button together with the hover background color
       &::-webkit-search-cancel-button {
         position: absolute;
         top: 0;
@@ -317,7 +255,7 @@
         opacity: 1;
 
         &:hover {
-          background-color: var(--hds-color-surface-interactive-hover);
+          background-color: var(--token-color-surface-interactive-hover);
         }
       }
     }
@@ -325,6 +263,6 @@
 
   // IS LOADING
   &.hds-form-text-input--is-loading {
-    background-image: var(--hds-form-text-input-background-image-data-url-search-loading);
+    background-image: var(--token-form-text-input-background-image-data-url-search-loading);
   }
 }
