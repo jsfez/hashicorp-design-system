@@ -10,6 +10,8 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { registerPrompts } from "./prompts/index.js";
 
+import { registerTools } from "./tools/index.js";
+
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirectoryPath = dirname(currentFilePath);
 const packageJsonPath = resolve(currentDirectoryPath, "../package.json");
@@ -37,6 +39,8 @@ const buildServer = (): McpServer => {
     name: "helios-design-system-mcp",
     version: getServerVersion(),
   });
+
+  registerTools(server);
 
   return server;
 };
