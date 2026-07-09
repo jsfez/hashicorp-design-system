@@ -8,6 +8,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { dirname, resolve } from "node:path";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { registerPrompts } from "./prompts/index.js";
 
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirectoryPath = dirname(currentFilePath);
@@ -110,6 +111,8 @@ const main = async (): Promise<void> => {
     const server = buildServer();
 
     shutdown = installLifecycleHandlers(server).shutdown;
+
+    registerPrompts(server);
 
     const transport = new StdioServerTransport();
 
