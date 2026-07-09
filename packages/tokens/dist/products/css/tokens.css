@@ -700,6 +700,14 @@
   --hds-rich-tooltip-toggle-foreground-color-hover: #3b3d45;
   --hds-rich-tooltip-toggle-foreground-color-active: #656a76;
   --hds-rich-tooltip-toggle-icon-size: 1em;
+  --hds-table-cell-padding-horizontal-short: 16px;
+  --hds-table-cell-padding-horizontal-medium: 16px;
+  --hds-table-cell-padding-horizontal-tall: 16px;
+  --hds-table-cell-padding-vertical-short: 6px;
+  --hds-table-cell-padding-vertical-medium: 14px;
+  --hds-table-cell-padding-vertical-tall: 22px;
+  --hds-table-border-color: #656a7633;
+  --hds-table-striped-color: #fafafa;
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-radius: 5px;
