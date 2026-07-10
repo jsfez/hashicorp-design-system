@@ -195,6 +195,7 @@ Router.map(function () {
         this.route('text-input');
         this.route('radio-card');
       });
+      this.route('filter-bar');
       this.route('icon-tile');
       this.route('link', function (): void {
         this.route('inline');
