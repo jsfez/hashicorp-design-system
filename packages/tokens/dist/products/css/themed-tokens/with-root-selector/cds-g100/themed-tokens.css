@@ -497,7 +497,11 @@
   --hds-table-cell-padding-vertical-medium: 7px;
   --hds-table-cell-padding-vertical-short: 7px;
   --hds-table-cell-padding-vertical-tall: 0px;
-  --hds-table-striped-color: #393939;
+  --hds-table-row-color-default: #c6c6c6;
+  --hds-table-row-color-hover: #f4f4f4;
+  --hds-table-row-foreground-hover: rgba(141, 141, 141, 0.16);
+  --hds-table-striped-color-default: #393939;
+  --hds-table-striped-color-hover: rgba(141, 141, 141, 0.16);
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #393939;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);

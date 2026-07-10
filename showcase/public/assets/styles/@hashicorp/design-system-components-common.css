@@ -9698,6 +9698,24 @@ button.hds-button[href]::after {
   border: none;
 }
 
+.hds-theme-light .hds-table--density-short .hds-table__th, .hds-theme-light .hds-table--density-short .hds-table__td,
+.hds-theme-dark .hds-table--density-short .hds-table__th, .hds-theme-dark .hds-table--density-short .hds-table__td,
+.hds-theme-system .hds-table--density-short .hds-table__th, .hds-theme-system .hds-table--density-short .hds-table__td {
+  height: 2rem;
+}
+
+.hds-theme-light .hds-table--density-medium .hds-table__th, .hds-theme-light .hds-table--density-medium .hds-table__td,
+.hds-theme-dark .hds-table--density-medium .hds-table__th, .hds-theme-dark .hds-table--density-medium .hds-table__td,
+.hds-theme-system .hds-table--density-medium .hds-table__th, .hds-theme-system .hds-table--density-medium .hds-table__td {
+  height: 2.5rem;
+}
+
+.hds-theme-light .hds-table--density-tall .hds-table__th, .hds-theme-light .hds-table--density-tall .hds-table__td,
+.hds-theme-dark .hds-table--density-tall .hds-table__th, .hds-theme-dark .hds-table--density-tall .hds-table__td,
+.hds-theme-system .hds-table--density-tall .hds-table__th, .hds-theme-system .hds-table--density-tall .hds-table__td {
+  height: 3rem;
+}
+
 .hds-table__thead .hds-table__tr {
   color: var(--hds-foreground-color-strong);
   background-color: var(--hds-surface-color-strong);
@@ -9811,11 +9829,18 @@ button.hds-button[href]::after {
 }
 
 .hds-table__tbody .hds-table__tr {
-  color: var(--hds-foreground-color-primary);
+  color: var(--hds-table-row-color-default);
   background-color: var(--hds-surface-color-primary);
 }
+.hds-table__tbody .hds-table__tr:hover, .hds-table__tbody .hds-table__tr.mock-hover {
+  color: var(--hds-table-row-color-hover);
+  background-color: var(--hds-table-row-foreground-hover);
+}
 .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even) {
-  background-color: var(--hds-table-striped-color);
+  background-color: var(--hds-table-striped-color-default);
+}
+.hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even):hover, .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even).mock-hover {
+  background-color: var(--hds-table-striped-color-hover);
 }
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__th:first-child,
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__td:first-child {

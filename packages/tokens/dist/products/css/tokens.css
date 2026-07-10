@@ -707,7 +707,11 @@
   --hds-table-cell-padding-vertical-medium: 14px;
   --hds-table-cell-padding-vertical-tall: 22px;
   --hds-table-border-color: #656a7633;
-  --hds-table-striped-color: #fafafa;
+  --hds-table-row-color-default: #3b3d45;
+  --hds-table-row-color-hover: #3b3d45;
+  --hds-table-row-foreground-hover: #ffffff;
+  --hds-table-striped-color-default: #fafafa;
+  --hds-table-striped-color-hover: #fafafa;
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-radius: 5px;
