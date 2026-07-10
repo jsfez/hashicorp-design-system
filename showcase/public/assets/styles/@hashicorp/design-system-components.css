@@ -716,6 +716,8 @@
   --hds-table-row-foreground-hover: #ffffff;
   --hds-table-striped-color-default: #fafafa;
   --hds-table-striped-color-hover: #fafafa;
+  --hds-table-header-surface-color: rgba(0, 0, 0, 0);
+  --hds-table-body-surface-color: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-radius: 5px;
@@ -10539,6 +10541,9 @@ button.hds-button[href]::after {
   height: 3rem;
 }
 
+.hds-table__thead {
+  background-color: var(--hds-table-header-surface-color);
+}
 .hds-table__thead .hds-table__tr {
   color: var(--hds-foreground-color-strong);
   background-color: var(--hds-surface-color-strong);
@@ -10651,6 +10656,9 @@ button.hds-button[href]::after {
   display: none;
 }
 
+.hds-table__tbody {
+  background-color: var(--hds-table-body-surface-color);
+}
 .hds-table__tbody .hds-table__tr {
   color: var(--hds-table-row-color-default);
   background-color: var(--hds-surface-color-primary);

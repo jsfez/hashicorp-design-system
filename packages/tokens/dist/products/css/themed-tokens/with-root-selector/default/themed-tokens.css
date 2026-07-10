@@ -490,6 +490,7 @@
   --hds-surface-low-box-shadow: 0 0 0 1px #656a7626, 0px 1px 1px 0px #656a760d, 0px 2px 2px 0px #656a760d;
   --hds-surface-mid-box-shadow: 0 0 0 1px #656a7626, 0px 2px 3px 0px #656a761a, 0px 8px 16px -10px #656a7633;
   --hds-surface-overlay-box-shadow: 0 0 0 1px #3b3d4540, 0px 2px 3px 0px #3b3d4540, 0px 12px 24px 0px #3b3d4559;
+  --hds-table-body-surface-color: rgba(0, 0, 0, 0);
   --hds-table-border-color: var(--hds-border-color-primary);
   --hds-table-cell-padding-horizontal-medium: 16px;
   --hds-table-cell-padding-horizontal-short: 16px;
@@ -497,6 +498,7 @@
   --hds-table-cell-padding-vertical-medium: 14px;
   --hds-table-cell-padding-vertical-short: 6px;
   --hds-table-cell-padding-vertical-tall: 22px;
+  --hds-table-header-surface-color: rgba(0, 0, 0, 0);
   --hds-table-row-color-default: var(--hds-foreground-color-primary);
   --hds-table-row-color-hover: var(--hds-foreground-color-primary);
   --hds-table-row-foreground-hover: var(--hds-surface-color-primary);

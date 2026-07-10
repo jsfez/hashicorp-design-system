@@ -9716,6 +9716,9 @@ button.hds-button[href]::after {
   height: 3rem;
 }
 
+.hds-table__thead {
+  background-color: var(--hds-table-header-surface-color);
+}
 .hds-table__thead .hds-table__tr {
   color: var(--hds-foreground-color-strong);
   background-color: var(--hds-surface-color-strong);
@@ -9828,6 +9831,9 @@ button.hds-button[href]::after {
   display: none;
 }
 
+.hds-table__tbody {
+  background-color: var(--hds-table-body-surface-color);
+}
 .hds-table__tbody .hds-table__tr {
   color: var(--hds-table-row-color-default);
   background-color: var(--hds-surface-color-primary);

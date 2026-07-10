@@ -560,6 +560,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-surface-low-box-shadow: none;
   --hds-surface-mid-box-shadow: none;
   --hds-surface-overlay-box-shadow: none;
+  --hds-table-body-surface-color: #f4f4f4;
   --hds-table-border-color: #e0e0e0;
   --hds-table-cell-padding-horizontal-medium: 16px;
   --hds-table-cell-padding-horizontal-short: 16px;
@@ -567,6 +568,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-cell-padding-vertical-medium: 7px;
   --hds-table-cell-padding-vertical-short: 7px;
   --hds-table-cell-padding-vertical-tall: 0px;
+  --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-color-default: #525252;
   --hds-table-row-color-hover: #161616;
   --hds-table-row-foreground-hover: rgba(141, 141, 141, 0.12);
@@ -1189,6 +1191,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-surface-low-box-shadow: none;
     --hds-surface-mid-box-shadow: none;
     --hds-surface-overlay-box-shadow: none;
+    --hds-table-body-surface-color: #f4f4f4;
     --hds-table-border-color: #e0e0e0;
     --hds-table-cell-padding-horizontal-medium: 16px;
     --hds-table-cell-padding-horizontal-short: 16px;
@@ -1196,6 +1199,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-table-cell-padding-vertical-medium: 7px;
     --hds-table-cell-padding-vertical-short: 7px;
     --hds-table-cell-padding-vertical-tall: 0px;
+    --hds-table-header-surface-color: #e0e0e0;
     --hds-table-row-color-default: #525252;
     --hds-table-row-color-hover: #161616;
     --hds-table-row-foreground-hover: rgba(141, 141, 141, 0.12);
@@ -1839,6 +1843,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-surface-low-box-shadow: none;
     --hds-surface-mid-box-shadow: none;
     --hds-surface-overlay-box-shadow: none;
+    --hds-table-body-surface-color: #262626;
     --hds-table-border-color: #393939;
     --hds-table-cell-padding-horizontal-medium: 16px;
     --hds-table-cell-padding-horizontal-short: 16px;
@@ -1846,6 +1851,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-table-cell-padding-vertical-medium: 7px;
     --hds-table-cell-padding-vertical-short: 7px;
     --hds-table-cell-padding-vertical-tall: 0px;
+    --hds-table-header-surface-color: #393939;
     --hds-table-row-color-default: #c6c6c6;
     --hds-table-row-color-hover: #f4f4f4;
     --hds-table-row-foreground-hover: rgba(141, 141, 141, 0.16);
@@ -2467,6 +2473,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-surface-low-box-shadow: none;
   --hds-surface-mid-box-shadow: none;
   --hds-surface-overlay-box-shadow: none;
+  --hds-table-body-surface-color: #f4f4f4;
   --hds-table-border-color: #e0e0e0;
   --hds-table-cell-padding-horizontal-medium: 16px;
   --hds-table-cell-padding-horizontal-short: 16px;
@@ -2474,6 +2481,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-cell-padding-vertical-medium: 7px;
   --hds-table-cell-padding-vertical-short: 7px;
   --hds-table-cell-padding-vertical-tall: 0px;
+  --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-color-default: #525252;
   --hds-table-row-color-hover: #161616;
   --hds-table-row-foreground-hover: rgba(141, 141, 141, 0.12);
@@ -3114,6 +3122,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-surface-low-box-shadow: none;
   --hds-surface-mid-box-shadow: none;
   --hds-surface-overlay-box-shadow: none;
+  --hds-table-body-surface-color: #262626;
   --hds-table-border-color: #393939;
   --hds-table-cell-padding-horizontal-medium: 16px;
   --hds-table-cell-padding-horizontal-short: 16px;
@@ -3121,6 +3130,7 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-cell-padding-vertical-medium: 7px;
   --hds-table-cell-padding-vertical-short: 7px;
   --hds-table-cell-padding-vertical-tall: 0px;
+  --hds-table-header-surface-color: #393939;
   --hds-table-row-color-default: #c6c6c6;
   --hds-table-row-color-hover: #f4f4f4;
   --hds-table-row-foreground-hover: rgba(141, 141, 141, 0.16);
