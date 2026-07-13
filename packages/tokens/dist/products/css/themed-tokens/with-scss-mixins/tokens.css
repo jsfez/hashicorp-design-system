@@ -615,6 +615,29 @@
       0px 2px 3px 0px #656a761a, 0px 8px 16px -10px #656a7633;
     --hds-elevation-overlay-box-shadow:
       0px 2px 3px 0px #3b3d4540, 0px 12px 24px 0px #3b3d4559;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 4px;
+    --hds-filter-bar-filter-group-values-list-gap: 4px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 8px;
+    --hds-filter-bar-tabs-list-gap: 4px;
+    --hds-filter-bar-tabs-list-padding: 8px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: var(
+      --hds-core-color-blue-500
+    );
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: var(
+      --hds-foreground-color-action
+    );
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: var(
+      --hds-core-color-blue-400
+    );
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: var(
+      --hds-foreground-color-primary
+    );
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: var(
+      --hds-core-color-neutral-300
+    );
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: var(
+      --hds-core-color-neutral-200
+    );
     --hds-focus-color-action-external: #5990ff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: var(--hds-core-color-blue-300);
     --hds-focus-color-critical-external: #dd7578; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -1367,6 +1390,17 @@
     --hds-elevation-low-box-shadow: none;
     --hds-elevation-mid-box-shadow: none;
     --hds-elevation-overlay-box-shadow: none;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 16px;
+    --hds-filter-bar-filter-group-values-list-gap: 0px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 11px;
+    --hds-filter-bar-tabs-list-gap: 0px;
+    --hds-filter-bar-tabs-list-padding: 0px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: #525252;
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: #a8a8a8;
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: #c6c6c6;
     --hds-focus-color-action-external: #0f62fe; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: #ffffff;
     --hds-focus-color-critical-external: #0f62fe; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -2007,6 +2041,17 @@
     --hds-elevation-low-box-shadow: none;
     --hds-elevation-mid-box-shadow: none;
     --hds-elevation-overlay-box-shadow: none;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 16px;
+    --hds-filter-bar-filter-group-values-list-gap: 0px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 11px;
+    --hds-filter-bar-tabs-list-gap: 0px;
+    --hds-filter-bar-tabs-list-padding: 0px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: #c6c6c6;
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: #8d8d8d;
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: #6f6f6f;
     --hds-focus-color-action-external: #ffffff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: #161616;
     --hds-focus-color-critical-external: #ffffff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -2627,6 +2672,17 @@
     --hds-elevation-low-box-shadow: none;
     --hds-elevation-mid-box-shadow: none;
     --hds-elevation-overlay-box-shadow: none;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 16px;
+    --hds-filter-bar-filter-group-values-list-gap: 0px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 11px;
+    --hds-filter-bar-tabs-list-gap: 0px;
+    --hds-filter-bar-tabs-list-padding: 0px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: #525252;
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: #a8a8a8;
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: #c6c6c6;
     --hds-focus-color-action-external: #0f62fe; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: #ffffff;
     --hds-focus-color-critical-external: #0f62fe; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -3247,6 +3303,17 @@
     --hds-elevation-low-box-shadow: none;
     --hds-elevation-mid-box-shadow: none;
     --hds-elevation-overlay-box-shadow: none;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 16px;
+    --hds-filter-bar-filter-group-values-list-gap: 0px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 11px;
+    --hds-filter-bar-tabs-list-gap: 0px;
+    --hds-filter-bar-tabs-list-padding: 0px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: #525252;
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: #525252;
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: #a8a8a8;
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: #c6c6c6;
     --hds-focus-color-action-external: #0f62fe; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: #ffffff;
     --hds-focus-color-critical-external: #0f62fe; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -3887,6 +3954,17 @@
     --hds-elevation-low-box-shadow: none;
     --hds-elevation-mid-box-shadow: none;
     --hds-elevation-overlay-box-shadow: none;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 16px;
+    --hds-filter-bar-filter-group-values-list-gap: 0px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 11px;
+    --hds-filter-bar-tabs-list-gap: 0px;
+    --hds-filter-bar-tabs-list-padding: 0px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: #c6c6c6;
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: #8d8d8d;
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: #6f6f6f;
     --hds-focus-color-action-external: #ffffff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: #161616;
     --hds-focus-color-critical-external: #ffffff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -4527,6 +4605,17 @@
     --hds-elevation-low-box-shadow: none;
     --hds-elevation-mid-box-shadow: none;
     --hds-elevation-overlay-box-shadow: none;
+    --hds-filter-bar-filter-group-values-list-clear-button-margin-left: 16px;
+    --hds-filter-bar-filter-group-values-list-gap: 0px;
+    --hds-filter-bar-filter-group-values-list-selection-option-padding-vertical: 11px;
+    --hds-filter-bar-tabs-list-gap: 0px;
+    --hds-filter-bar-tabs-list-padding: 0px;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-active: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-default: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-selected-hover: #c6c6c6;
+    --hds-filter-bar-tabs-tab-foreground-color-unselected: #c6c6c6;
+    --hds-filter-bar-tabs-tab-surface-color-selected-active: #8d8d8d;
+    --hds-filter-bar-tabs-tab-surface-color-selected-hover: #6f6f6f;
     --hds-focus-color-action-external: #ffffff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
     --hds-focus-color-action-internal: #161616;
     --hds-focus-color-critical-external: #ffffff; /** this is a special color used only for the focus style, to pass color contrast for a11y purpose */
@@ -4831,6 +4920,9 @@
     --hds-code-block-foreground-color-selection: #0d0e12;
     --hds-code-block-surface-color-selection: #86ff13;
     --hds-dropdown-toggle-button-gap: 6px;
+    --hds-filter-bar-tabs-tab-surface-color-selected-default: var(
+      --hds-surface-color-strong
+    );
     --hds-form-checkbox-background-image-data-url-disabled: url("data:image/svg+xml,%3csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.78033 3.21967C10.0732 3.51256 10.0732 3.98744 9.78033 4.28033L5.28033 8.78033C4.98744 9.07322 4.51256 9.07322 4.21967 8.78033L2.21967 6.78033C1.92678 6.48744 1.92678 6.01256 2.21967 5.71967C2.51256 5.42678 2.98744 5.42678 3.28033 5.71967L4.75 7.18934L8.71967 3.21967C9.01256 2.92678 9.48744 2.92678 9.78033 3.21967Z' fill='%238C909C'/%3e%3c/svg%3e"); /** notice: the 'tick' color is hardcoded here! */
     --hds-form-checkbox-background-image-data-url-indeterminate-disabled: url("data:image/svg+xml,%3csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m2.03125,6a0.66146,0.75 0 0 1 0.66146,-0.75l6.61458,0a0.66146,0.75 0 0 1 0,1.5l-6.61458,0a0.66146,0.75 0 0 1 -0.66146,-0.75z' fill='%238C909C'/%3e%3c/svg%3e"); /** notice: the 'dash' color is hardcoded here! */
     --hds-form-checkbox-background-image-data-url-indeterminate: url("data:image/svg+xml,%3csvg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m2.03125,6a0.66146,0.75 0 0 1 0.66146,-0.75l6.61458,0a0.66146,0.75 0 0 1 0,1.5l-6.61458,0a0.66146,0.75 0 0 1 -0.66146,-0.75z' fill='%23FFF'/%3e%3c/svg%3e"); /** notice: the 'dash' color is hardcoded here! */
