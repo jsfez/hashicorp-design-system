@@ -62,6 +62,26 @@ module('Integration | Component | hds/table/tr', function (hooks) {
     assert.dom(checkboxSelector).isChecked();
   });
 
+  test('it should toggle the selected row class when the checkbox is clicked', async function (assert) {
+    await render(
+      <template>
+        <HdsTableTr id="data-test-table-tr" @isSelectable={{true}} />
+      </template>,
+    );
+
+    assert
+      .dom('#data-test-table-tr')
+      .doesNotHaveClass('hds-table__tr--is-selected');
+
+    await click(checkboxSelector);
+    assert.dom('#data-test-table-tr').hasClass('hds-table__tr--is-selected');
+
+    await click(checkboxSelector);
+    assert
+      .dom('#data-test-table-tr')
+      .doesNotHaveClass('hds-table__tr--is-selected');
+  });
+
   test('the checkbox contains the `@selectionAriaLabelSuffix` suffix', async function (assert) {
     await render(
       <template>

@@ -9887,7 +9887,7 @@ button.hds-button[href]::after {
 .hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__td,
 .hds-theme-dark .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-dark .hds-table--striped .hds-table__tbody .hds-table__td,
 .hds-theme-system .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-system .hds-table--striped .hds-table__tbody .hds-table__td {
-  border-bottom: none;
+  border-bottom-color: transparent;
 }
 
 .hds-table--density-short .hds-table__tbody .hds-table__th,

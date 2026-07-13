@@ -279,7 +279,7 @@ $hds-table-header-height: 48px;
 
     .hds-table--striped & {
       @include hds-apply-only-if-carbon() {
-        border-bottom: none;
+        border-bottom-color: transparent;
       }
     }
 
