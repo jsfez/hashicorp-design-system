@@ -10665,7 +10665,7 @@ button.hds-button[href]::after {
 }
 .hds-table__tbody .hds-table__tr:hover, .hds-table__tbody .hds-table__tr.mock-hover {
   color: var(--hds-table-row-color-hover);
-  background-color: var(--hds-table-row-foreground-hover);
+  background-color: var(--hds-table-row-foreground-color-hover);
 }
 .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even) {
   background-color: var(--hds-table-striped-color-default);
