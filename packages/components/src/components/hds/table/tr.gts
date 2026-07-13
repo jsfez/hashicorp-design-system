@@ -71,8 +71,18 @@ export default class HdsTableTr extends Component<HdsTableTrSignature> {
     return undefined;
   }
 
+  get classNames(): string {
+    const classes = ['hds-table__tr'];
+
+    if (this.args.isSelected) {
+      classes.push(`hds-table__tr--is-selected`);
+    }
+
+    return classes.join(' ');
+  }
+
   <template>
-    <tr class="hds-table__tr" ...attributes>
+    <tr class={{this.classNames}} ...attributes>
       {{#if @isSelectable}}
         <HdsTableThSelectable
           @isSelected={{@isSelected}}

@@ -9690,7 +9690,7 @@ button.hds-button[href]::after {
 .hds-table,
 .hds-table__th,
 .hds-table__td {
-  border: calc(1px / 2) solid var(--hds-table-border-color);
+  border: calc(1px / 2) solid var(--hds-table-row-border-color-default);
 }
 .hds-theme-light .hds-table, .hds-theme-light .hds-table__th, .hds-theme-light .hds-table__td,
 .hds-theme-dark .hds-table, .hds-theme-dark .hds-table__th, .hds-theme-dark .hds-table__td,
@@ -9835,19 +9835,38 @@ button.hds-button[href]::after {
   background-color: var(--hds-table-body-surface-color);
 }
 .hds-table__tbody .hds-table__tr {
-  color: var(--hds-table-row-color-default);
+  color: var(--hds-table-cell-foreground-color-default);
   background-color: var(--hds-surface-color-primary);
 }
 .hds-table__tbody .hds-table__tr:hover, .hds-table__tbody .hds-table__tr.mock-hover {
-  color: var(--hds-table-row-color-hover);
-  background-color: var(--hds-table-row-foreground-color-hover);
+  color: var(--hds-table-cell-foreground-color-hover);
+  background-color: var(--hds-table-cell-surface-color-hover);
 }
 .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even) {
-  background-color: var(--hds-table-striped-color-default);
+  background-color: var(--hds-table-cell-surface-color-striped-default);
 }
 .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even):hover, .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even).mock-hover {
-  background-color: var(--hds-table-striped-color-hover);
+  background-color: var(--hds-table-cell-surface-color-striped-hover);
 }
+.hds-table__tbody .hds-table__tr.hds-table__tr--is-selected {
+  color: var(--hds-table-cell-foreground-color-selected);
+  background-color: var(--hds-table-cell-surface-color-selected-default);
+}
+.hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__td,
+.hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__td,
+.hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__td {
+  border-bottom: 1px solid var(--hds-table-row-border-color-selected-default);
+}
+
+.hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover, .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover {
+  background-color: var(--hds-table-cell-surface-color-selected-hover);
+}
+.hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__td, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__td,
+.hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__td, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__td,
+.hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__td, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__td {
+  border-bottom: 1px solid var(--hds-table-row-border-color-selected-hover);
+}
+
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__th:first-child,
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__td:first-child {
   border-bottom-left-radius: calc(var(--hds-border-radius-medium) - 1px);
@@ -9862,7 +9881,7 @@ button.hds-button[href]::after {
 .hds-theme-light .hds-table__tbody .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__td,
 .hds-theme-dark .hds-table__tbody .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__td,
 .hds-theme-system .hds-table__tbody .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__td {
-  border-bottom: 1px solid var(--hds-table-border-color);
+  border-bottom: 1px solid var(--hds-table-row-border-color-default);
 }
 
 .hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__td,
