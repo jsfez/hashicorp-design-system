@@ -583,8 +583,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-border-color-default: #e0e0e0;
+  --hds-table-row-border-color-hover: #e8e8e8;
   --hds-table-row-border-color-selected-default: #c6c6c6;
   --hds-table-row-border-color-selected-hover: #d1d1d1;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #e0e0e0;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -1225,8 +1227,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #e0e0e0;
     --hds-table-row-border-color-default: #e0e0e0;
+    --hds-table-row-border-color-hover: #e8e8e8;
     --hds-table-row-border-color-selected-default: #c6c6c6;
     --hds-table-row-border-color-selected-hover: #d1d1d1;
+    --hds-table-row-border-width: 1px;
     --hds-tabs-indicator-height: 2px;
     --hds-tabs-tab-border-color-default: #e0e0e0;
     --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -1888,8 +1892,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #393939;
     --hds-table-row-border-color-default: #393939;
+    --hds-table-row-border-color-hover: #333333;
     --hds-table-row-border-color-selected-default: #525252;
     --hds-table-row-border-color-selected-hover: #474747;
+    --hds-table-row-border-width: 1px;
     --hds-tabs-indicator-height: 2px;
     --hds-tabs-tab-border-color-default: #393939;
     --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -2529,8 +2535,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-border-color-default: #e0e0e0;
+  --hds-table-row-border-color-hover: #e8e8e8;
   --hds-table-row-border-color-selected-default: #c6c6c6;
   --hds-table-row-border-color-selected-hover: #d1d1d1;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #e0e0e0;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -3189,8 +3197,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #393939;
   --hds-table-row-border-color-default: #393939;
+  --hds-table-row-border-color-hover: #333333;
   --hds-table-row-border-color-selected-default: #525252;
   --hds-table-row-border-color-selected-hover: #474747;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #393939;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);

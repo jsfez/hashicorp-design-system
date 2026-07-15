@@ -886,10 +886,12 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 14px;
   --hds-table-header-surface-color: rgba(0, 0, 0, 0);
   --hds-table-row-border-color-default: var(--hds-border-color-primary);
+  --hds-table-row-border-color-hover: var(--hds-border-color-primary);
   --hds-table-row-border-color-selected-default: var(
     --hds-border-color-primary
   );
   --hds-table-row-border-color-selected-hover: var(--hds-border-color-primary);
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 3px;
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
@@ -1566,8 +1568,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #e0e0e0;
     --hds-table-row-border-color-default: #e0e0e0;
+    --hds-table-row-border-color-hover: #e8e8e8;
     --hds-table-row-border-color-selected-default: #c6c6c6;
     --hds-table-row-border-color-selected-hover: #d1d1d1;
+    --hds-table-row-border-width: 1px;
     --hds-tabs-indicator-height: 2px;
     --hds-tabs-tab-border-color-default: #e0e0e0;
     --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -2229,8 +2233,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #393939;
     --hds-table-row-border-color-default: #393939;
+    --hds-table-row-border-color-hover: #333333;
     --hds-table-row-border-color-selected-default: #525252;
     --hds-table-row-border-color-selected-hover: #474747;
+    --hds-table-row-border-width: 1px;
     --hds-tabs-indicator-height: 2px;
     --hds-tabs-tab-border-color-default: #393939;
     --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -2871,8 +2877,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-border-color-default: #e0e0e0;
+  --hds-table-row-border-color-hover: #e8e8e8;
   --hds-table-row-border-color-selected-default: #c6c6c6;
   --hds-table-row-border-color-selected-hover: #d1d1d1;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #e0e0e0;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -3532,8 +3540,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #393939;
   --hds-table-row-border-color-default: #393939;
+  --hds-table-row-border-color-hover: #333333;
   --hds-table-row-border-color-selected-default: #525252;
   --hds-table-row-border-color-selected-hover: #474747;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #393939;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -4172,8 +4182,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-border-color-default: #c6c6c6;
+  --hds-table-row-border-color-hover: #e8e8e8;
   --hds-table-row-border-color-selected-default: #c6c6c6;
   --hds-table-row-border-color-selected-hover: #d1d1d1;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #c6c6c6;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);
@@ -4832,8 +4844,10 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #525252;
   --hds-table-row-border-color-default: #525252;
+  --hds-table-row-border-color-hover: #474747;
   --hds-table-row-border-color-selected-default: #6f6f6f;
   --hds-table-row-border-color-selected-hover: #636363;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #525252;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);

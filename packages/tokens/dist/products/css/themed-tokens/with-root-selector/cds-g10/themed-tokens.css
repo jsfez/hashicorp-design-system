@@ -513,8 +513,10 @@
   --hds-table-header-cell-padding-vertical-tall: 7px;
   --hds-table-header-surface-color: #e0e0e0;
   --hds-table-row-border-color-default: #c6c6c6;
+  --hds-table-row-border-color-hover: #e8e8e8;
   --hds-table-row-border-color-selected-default: #c6c6c6;
   --hds-table-row-border-color-selected-hover: #d1d1d1;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #c6c6c6;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);

@@ -9690,7 +9690,7 @@ button.hds-button[href]::after {
 .hds-table,
 .hds-table__th,
 .hds-table__td {
-  border: calc(1px / 2) solid var(--hds-table-row-border-color-default);
+  border: calc(var(--hds-table-row-border-width) / 2) solid var(--hds-table-row-border-color-default);
 }
 .hds-theme-light .hds-table, .hds-theme-light .hds-table__th, .hds-theme-light .hds-table__td,
 .hds-theme-dark .hds-table, .hds-theme-dark .hds-table__th, .hds-theme-dark .hds-table__td,
@@ -9750,10 +9750,10 @@ button.hds-button[href]::after {
   justify-content: flex-end;
 }
 .hds-table__thead .hds-table__tr:first-of-type .hds-table__th:first-child {
-  border-top-left-radius: calc(var(--hds-border-radius-medium) - 1px);
+  border-top-left-radius: calc(var(--hds-border-radius-medium) - var(--hds-table-row-border-width));
 }
 .hds-table__thead .hds-table__tr:first-of-type .hds-table__th:last-child {
-  border-top-right-radius: calc(var(--hds-border-radius-medium) - 1px);
+  border-top-right-radius: calc(var(--hds-border-radius-medium) - var(--hds-table-row-border-width));
 }
 
 .hds-table__th--is-selectable {
@@ -9832,10 +9832,37 @@ button.hds-button[href]::after {
   color: var(--hds-table-cell-foreground-color-default);
   background-color: var(--hds-surface-color-primary);
 }
+.hds-theme-light .hds-table__tbody .hds-table__tr .hds-table__th,
+.hds-theme-light .hds-table__tbody .hds-table__tr .hds-table__td,
+.hds-theme-dark .hds-table__tbody .hds-table__tr .hds-table__th,
+.hds-theme-dark .hds-table__tbody .hds-table__tr .hds-table__td,
+.hds-theme-system .hds-table__tbody .hds-table__tr .hds-table__th,
+.hds-theme-system .hds-table__tbody .hds-table__tr .hds-table__td {
+  border-bottom: var(--hds-table-row-border-width) solid var(--hds-table-row-border-color-default);
+}
+
 .hds-table__tbody .hds-table__tr:hover, .hds-table__tbody .hds-table__tr.mock-hover {
   color: var(--hds-table-cell-foreground-color-hover);
   background-color: var(--hds-table-cell-surface-color-hover);
 }
+.hds-theme-light .hds-table__tbody .hds-table__tr:hover .hds-table__th,
+.hds-theme-light .hds-table__tbody .hds-table__tr:hover .hds-table__td, .hds-theme-light .hds-table__tbody .hds-table__tr.mock-hover .hds-table__th,
+.hds-theme-light .hds-table__tbody .hds-table__tr.mock-hover .hds-table__td,
+.hds-theme-dark .hds-table__tbody .hds-table__tr:hover .hds-table__th,
+.hds-theme-dark .hds-table__tbody .hds-table__tr:hover .hds-table__td, .hds-theme-dark .hds-table__tbody .hds-table__tr.mock-hover .hds-table__th,
+.hds-theme-dark .hds-table__tbody .hds-table__tr.mock-hover .hds-table__td,
+.hds-theme-system .hds-table__tbody .hds-table__tr:hover .hds-table__th,
+.hds-theme-system .hds-table__tbody .hds-table__tr:hover .hds-table__td, .hds-theme-system .hds-table__tbody .hds-table__tr.mock-hover .hds-table__th,
+.hds-theme-system .hds-table__tbody .hds-table__tr.mock-hover .hds-table__td {
+  border-bottom: var(--hds-table-row-border-width) solid var(--hds-table-row-border-color-hover);
+}
+
+.hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__tr,
+.hds-theme-dark .hds-table--striped .hds-table__tbody .hds-table__tr,
+.hds-theme-system .hds-table--striped .hds-table__tbody .hds-table__tr {
+  border-bottom-color: transparent;
+}
+
 .hds-table--striped .hds-table__tbody .hds-table__tr:nth-child(even) {
   background-color: var(--hds-table-cell-surface-color-striped-default);
 }
@@ -9844,46 +9871,42 @@ button.hds-button[href]::after {
 }
 .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected {
   color: var(--hds-table-cell-foreground-color-selected);
+}
+.hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected,
+.hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected,
+.hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected {
   background-color: var(--hds-table-cell-surface-color-selected-default);
 }
+
 .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__td,
 .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__td,
 .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected .hds-table__td {
-  border-bottom: 1px solid var(--hds-table-row-border-color-selected-default);
+  border-bottom: var(--hds-table-row-border-width) solid var(--hds-table-row-border-color-selected-default);
 }
 
-.hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover, .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover {
+.hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover,
+.hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover,
+.hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover {
   background-color: var(--hds-table-cell-surface-color-selected-hover);
 }
+
 .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__td, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__td,
 .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__td, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__td,
 .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected:hover .hds-table__td, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__tr.hds-table__tr--is-selected.mock-hover .hds-table__td {
-  border-bottom: 1px solid var(--hds-table-row-border-color-selected-hover);
+  border-bottom: var(--hds-table-row-border-width) solid var(--hds-table-row-border-color-selected-hover);
 }
 
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__th:first-child,
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__td:first-child {
-  border-bottom-left-radius: calc(var(--hds-border-radius-medium) - 1px);
+  border-bottom-left-radius: calc(var(--hds-border-radius-medium) - var(--hds-table-row-border-width));
 }
 .hds-table__tbody .hds-table__tr:last-of-type .hds-table__td:last-child {
-  border-bottom-right-radius: calc(var(--hds-border-radius-medium) - 1px);
+  border-bottom-right-radius: calc(var(--hds-border-radius-medium) - var(--hds-table-row-border-width));
 }
 .hds-table__tbody .hds-table__th,
 .hds-table__tbody .hds-table__td {
   text-align: left;
 }
-.hds-theme-light .hds-table__tbody .hds-table__th, .hds-theme-light .hds-table__tbody .hds-table__td,
-.hds-theme-dark .hds-table__tbody .hds-table__th, .hds-theme-dark .hds-table__tbody .hds-table__td,
-.hds-theme-system .hds-table__tbody .hds-table__th, .hds-theme-system .hds-table__tbody .hds-table__td {
-  border-bottom: 1px solid var(--hds-table-row-border-color-default);
-}
-
-.hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-light .hds-table--striped .hds-table__tbody .hds-table__td,
-.hds-theme-dark .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-dark .hds-table--striped .hds-table__tbody .hds-table__td,
-.hds-theme-system .hds-table--striped .hds-table__tbody .hds-table__th, .hds-theme-system .hds-table--striped .hds-table__tbody .hds-table__td {
-  border-bottom-color: transparent;
-}
-
 .hds-table--density-short .hds-table__tbody .hds-table__th,
 .hds-table--density-short .hds-table__tbody .hds-table__td {
   padding: var(--hds-table-cell-padding-vertical-short) var(--hds-table-cell-padding-horizontal-short) calc(var(--hds-table-cell-padding-vertical-short) - 1px);

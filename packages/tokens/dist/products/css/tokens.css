@@ -714,7 +714,9 @@
   --hds-table-cell-foreground-color-default: #3b3d45;
   --hds-table-cell-foreground-color-hover: #3b3d45;
   --hds-table-cell-foreground-color-selected: #3b3d45;
+  --hds-table-row-border-width: 1px;
   --hds-table-row-border-color-default: #656a7633;
+  --hds-table-row-border-color-hover: #656a7633;
   --hds-table-row-border-color-selected-default: #656a7633;
   --hds-table-row-border-color-selected-hover: #656a7633;
   --hds-table-header-surface-color: rgba(0, 0, 0, 0);
