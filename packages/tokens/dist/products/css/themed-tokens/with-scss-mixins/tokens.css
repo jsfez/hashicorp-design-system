@@ -866,6 +866,12 @@
     --hds-table-cell-surface-color-striped-hover: var(
       --hds-surface-color-faint
     );
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 14px;
+    --hds-table-header-cell-padding-vertical-short: 14px;
+    --hds-table-header-cell-padding-vertical-tall: 14px;
     --hds-table-header-surface-color: rgba(0, 0, 0, 0);
     --hds-table-row-border-color-default: var(--hds-border-color-primary);
     --hds-table-row-border-color-selected-default: var(
@@ -1549,6 +1555,12 @@
     --hds-table-cell-surface-color-selected-hover: #d1d1d1;
     --hds-table-cell-surface-color-striped-default: #e0e0e0;
     --hds-table-cell-surface-color-striped-hover: rgba(141, 141, 141, 0.12);
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 7px;
+    --hds-table-header-cell-padding-vertical-short: 7px;
+    --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #e0e0e0;
     --hds-table-row-border-color-default: #e0e0e0;
     --hds-table-row-border-color-selected-default: #c6c6c6;
@@ -2208,6 +2220,12 @@
     --hds-table-cell-surface-color-selected-hover: #474747;
     --hds-table-cell-surface-color-striped-default: #393939;
     --hds-table-cell-surface-color-striped-hover: rgba(141, 141, 141, 0.16);
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 7px;
+    --hds-table-header-cell-padding-vertical-short: 7px;
+    --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #393939;
     --hds-table-row-border-color-default: #393939;
     --hds-table-row-border-color-selected-default: #525252;
@@ -2847,6 +2865,12 @@
     --hds-table-cell-surface-color-selected-hover: #d1d1d1;
     --hds-table-cell-surface-color-striped-default: #e0e0e0;
     --hds-table-cell-surface-color-striped-hover: rgba(141, 141, 141, 0.12);
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 7px;
+    --hds-table-header-cell-padding-vertical-short: 7px;
+    --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #e0e0e0;
     --hds-table-row-border-color-default: #e0e0e0;
     --hds-table-row-border-color-selected-default: #c6c6c6;
@@ -3486,6 +3510,12 @@
     --hds-table-cell-surface-color-selected-hover: #d1d1d1;
     --hds-table-cell-surface-color-striped-default: #e0e0e0;
     --hds-table-cell-surface-color-striped-hover: rgba(141, 141, 141, 0.12);
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 7px;
+    --hds-table-header-cell-padding-vertical-short: 7px;
+    --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #e0e0e0;
     --hds-table-row-border-color-default: #c6c6c6;
     --hds-table-row-border-color-selected-default: #c6c6c6;
@@ -4145,6 +4175,12 @@
     --hds-table-cell-surface-color-selected-hover: #636363;
     --hds-table-cell-surface-color-striped-default: #525252;
     --hds-table-cell-surface-color-striped-hover: rgba(141, 141, 141, 0.16);
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 7px;
+    --hds-table-header-cell-padding-vertical-short: 7px;
+    --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #525252;
     --hds-table-row-border-color-default: #525252;
     --hds-table-row-border-color-selected-default: #6f6f6f;
@@ -4804,6 +4840,12 @@
     --hds-table-cell-surface-color-selected-hover: #474747;
     --hds-table-cell-surface-color-striped-default: #393939;
     --hds-table-cell-surface-color-striped-hover: rgba(141, 141, 141, 0.16);
+    --hds-table-header-cell-padding-horizontal-medium: 16px;
+    --hds-table-header-cell-padding-horizontal-short: 16px;
+    --hds-table-header-cell-padding-horizontal-tall: 16px;
+    --hds-table-header-cell-padding-vertical-medium: 7px;
+    --hds-table-header-cell-padding-vertical-short: 7px;
+    --hds-table-header-cell-padding-vertical-tall: 7px;
     --hds-table-header-surface-color: #393939;
     --hds-table-row-border-color-default: #393939;
     --hds-table-row-border-color-selected-default: #525252;

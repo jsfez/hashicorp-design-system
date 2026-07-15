@@ -9724,21 +9724,15 @@ button.hds-button[href]::after {
   background-color: var(--hds-surface-color-strong);
 }
 .hds-table__thead .hds-table__tr .hds-table__th {
-  padding: var(--hds-table-cell-padding-vertical-medium) var(--hds-table-cell-padding-horizontal-medium) calc(var(--hds-table-cell-padding-vertical-medium) - 1px);
+  padding: var(--hds-table-header-cell-padding-vertical-medium) var(--hds-table-cell-padding-horizontal-medium) calc(var(--hds-table-header-cell-padding-vertical-medium) - 1px);
   text-align: left;
 }
-.hds-theme-light .hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-dark .hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-system .hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th {
-  padding: var(--hds-table-cell-padding-vertical-short) var(--hds-table-cell-padding-horizontal-short) calc(var(--hds-table-cell-padding-vertical-short) - 1px);
+.hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th {
+  padding: var(--hds-table-header-cell-padding-vertical-short) var(--hds-table-cell-padding-horizontal-short) calc(var(--hds-table-header-cell-padding-vertical-short) - 1px);
 }
-
-.hds-theme-light .hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-dark .hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-system .hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th {
-  padding: var(--hds-table-cell-padding-vertical-tall) var(--hds-table-cell-padding-horizontal-tall) calc(var(--hds-table-cell-padding-vertical-tall) - 1px);
+.hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th {
+  padding: var(--hds-table-header-cell-padding-vertical-tall) var(--hds-table-cell-padding-horizontal-tall) calc(var(--hds-table-header-cell-padding-vertical-tall) - 1px);
 }
-
 .hds-table__thead .hds-table__tr .hds-table__th--align-center,
 .hds-table__thead .hds-table__tr .hds-table__td--align-center {
   text-align: center;

@@ -722,6 +722,12 @@
   --hds-table-row-border-color-selected-default: #656a7633;
   --hds-table-row-border-color-selected-hover: #656a7633;
   --hds-table-header-surface-color: rgba(0, 0, 0, 0);
+  --hds-table-header-cell-padding-horizontal-short: 16px;
+  --hds-table-header-cell-padding-horizontal-medium: 16px;
+  --hds-table-header-cell-padding-horizontal-tall: 16px;
+  --hds-table-header-cell-padding-vertical-short: 14px;
+  --hds-table-header-cell-padding-vertical-medium: 14px;
+  --hds-table-header-cell-padding-vertical-tall: 14px;
   --hds-table-body-surface-color: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
@@ -10554,21 +10560,15 @@ button.hds-button[href]::after {
   background-color: var(--hds-surface-color-strong);
 }
 .hds-table__thead .hds-table__tr .hds-table__th {
-  padding: var(--hds-table-cell-padding-vertical-medium) var(--hds-table-cell-padding-horizontal-medium) calc(var(--hds-table-cell-padding-vertical-medium) - 1px);
+  padding: var(--hds-table-header-cell-padding-vertical-medium) var(--hds-table-cell-padding-horizontal-medium) calc(var(--hds-table-header-cell-padding-vertical-medium) - 1px);
   text-align: left;
 }
-.hds-theme-light .hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-dark .hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-system .hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th {
-  padding: var(--hds-table-cell-padding-vertical-short) var(--hds-table-cell-padding-horizontal-short) calc(var(--hds-table-cell-padding-vertical-short) - 1px);
+.hds-table--density-short .hds-table__thead .hds-table__tr .hds-table__th {
+  padding: var(--hds-table-header-cell-padding-vertical-short) var(--hds-table-cell-padding-horizontal-short) calc(var(--hds-table-header-cell-padding-vertical-short) - 1px);
 }
-
-.hds-theme-light .hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-dark .hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th,
-.hds-theme-system .hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th {
-  padding: var(--hds-table-cell-padding-vertical-tall) var(--hds-table-cell-padding-horizontal-tall) calc(var(--hds-table-cell-padding-vertical-tall) - 1px);
+.hds-table--density-tall .hds-table__thead .hds-table__tr .hds-table__th {
+  padding: var(--hds-table-header-cell-padding-vertical-tall) var(--hds-table-cell-padding-horizontal-tall) calc(var(--hds-table-header-cell-padding-vertical-tall) - 1px);
 }
-
 .hds-table__thead .hds-table__tr .hds-table__th--align-center,
 .hds-table__thead .hds-table__tr .hds-table__td--align-center {
   text-align: center;

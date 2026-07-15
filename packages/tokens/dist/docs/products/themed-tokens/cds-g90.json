@@ -23099,6 +23099,234 @@
     ]
   },
   {
+    "key": "{table.header.cell.padding.horizontal.short}",
+    "$type": "dimension",
+    "$value": "16px",
+    "unit": "px",
+    "$modes": {
+      "default": "16",
+      "cds-g0": "16",
+      "cds-g10": "16",
+      "cds-g90": "16",
+      "cds-g100": "16"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "16",
+      "unit": "px",
+      "$modes": {
+        "default": "16",
+        "cds-g0": "16",
+        "cds-g10": "16",
+        "cds-g90": "16",
+        "cds-g100": "16"
+      },
+      "key": "{table.header.cell.padding.horizontal.short}"
+    },
+    "name": "hds-table-header-cell-padding-horizontal-short",
+    "attributes": {
+      "category": "table"
+    },
+    "path": [
+      "table",
+      "header",
+      "cell",
+      "padding",
+      "horizontal",
+      "short"
+    ]
+  },
+  {
+    "key": "{table.header.cell.padding.horizontal.medium}",
+    "$type": "dimension",
+    "$value": "16px",
+    "unit": "px",
+    "$modes": {
+      "default": "16",
+      "cds-g0": "16",
+      "cds-g10": "16",
+      "cds-g90": "16",
+      "cds-g100": "16"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "16",
+      "unit": "px",
+      "$modes": {
+        "default": "16",
+        "cds-g0": "16",
+        "cds-g10": "16",
+        "cds-g90": "16",
+        "cds-g100": "16"
+      },
+      "key": "{table.header.cell.padding.horizontal.medium}"
+    },
+    "name": "hds-table-header-cell-padding-horizontal-medium",
+    "attributes": {
+      "category": "table"
+    },
+    "path": [
+      "table",
+      "header",
+      "cell",
+      "padding",
+      "horizontal",
+      "medium"
+    ]
+  },
+  {
+    "key": "{table.header.cell.padding.horizontal.tall}",
+    "$type": "dimension",
+    "$value": "16px",
+    "unit": "px",
+    "$modes": {
+      "default": "16",
+      "cds-g0": "16",
+      "cds-g10": "16",
+      "cds-g90": "16",
+      "cds-g100": "16"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "16",
+      "unit": "px",
+      "$modes": {
+        "default": "16",
+        "cds-g0": "16",
+        "cds-g10": "16",
+        "cds-g90": "16",
+        "cds-g100": "16"
+      },
+      "key": "{table.header.cell.padding.horizontal.tall}"
+    },
+    "name": "hds-table-header-cell-padding-horizontal-tall",
+    "attributes": {
+      "category": "table"
+    },
+    "path": [
+      "table",
+      "header",
+      "cell",
+      "padding",
+      "horizontal",
+      "tall"
+    ]
+  },
+  {
+    "key": "{table.header.cell.padding.vertical.short}",
+    "$type": "dimension",
+    "$value": "7px",
+    "unit": "px",
+    "$modes": {
+      "default": "14",
+      "cds-g0": "7",
+      "cds-g10": "7",
+      "cds-g90": "7",
+      "cds-g100": "7"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "7",
+      "unit": "px",
+      "$modes": {
+        "default": "14",
+        "cds-g0": "7",
+        "cds-g10": "7",
+        "cds-g90": "7",
+        "cds-g100": "7"
+      },
+      "key": "{table.header.cell.padding.vertical.short}"
+    },
+    "name": "hds-table-header-cell-padding-vertical-short",
+    "attributes": {
+      "category": "table"
+    },
+    "path": [
+      "table",
+      "header",
+      "cell",
+      "padding",
+      "vertical",
+      "short"
+    ]
+  },
+  {
+    "key": "{table.header.cell.padding.vertical.medium}",
+    "$type": "dimension",
+    "$value": "7px",
+    "unit": "px",
+    "$modes": {
+      "default": "14",
+      "cds-g0": "7",
+      "cds-g10": "7",
+      "cds-g90": "7",
+      "cds-g100": "7"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "7",
+      "unit": "px",
+      "$modes": {
+        "default": "14",
+        "cds-g0": "7",
+        "cds-g10": "7",
+        "cds-g90": "7",
+        "cds-g100": "7"
+      },
+      "key": "{table.header.cell.padding.vertical.medium}"
+    },
+    "name": "hds-table-header-cell-padding-vertical-medium",
+    "attributes": {
+      "category": "table"
+    },
+    "path": [
+      "table",
+      "header",
+      "cell",
+      "padding",
+      "vertical",
+      "medium"
+    ]
+  },
+  {
+    "key": "{table.header.cell.padding.vertical.tall}",
+    "$type": "dimension",
+    "$value": "7px",
+    "unit": "px",
+    "$modes": {
+      "default": "14",
+      "cds-g0": "7",
+      "cds-g10": "7",
+      "cds-g90": "7",
+      "cds-g100": "7"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "7",
+      "unit": "px",
+      "$modes": {
+        "default": "14",
+        "cds-g0": "7",
+        "cds-g10": "7",
+        "cds-g90": "7",
+        "cds-g100": "7"
+      },
+      "key": "{table.header.cell.padding.vertical.tall}"
+    },
+    "name": "hds-table-header-cell-padding-vertical-tall",
+    "attributes": {
+      "category": "table"
+    },
+    "path": [
+      "table",
+      "header",
+      "cell",
+      "padding",
+      "vertical",
+      "tall"
+    ]
+  },
+  {
     "key": "{table.body.surface.color}",
     "$type": "color",
     "$value": "#393939",
