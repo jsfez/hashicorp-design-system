@@ -200,6 +200,7 @@ Router.map(function () {
         this.route('textarea');
         this.route('radio-card');
         this.route('select');
+        this.route('super-select');
         this.route('toggle');
       });
       this.route('icon-tile');
