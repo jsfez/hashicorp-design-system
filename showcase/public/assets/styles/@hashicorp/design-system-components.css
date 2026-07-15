@@ -730,6 +730,13 @@
   --hds-table-header-cell-padding-vertical-short: 14px;
   --hds-table-header-cell-padding-vertical-medium: 14px;
   --hds-table-header-cell-padding-vertical-tall: 14px;
+  --hds-table-header-button-foreground-color-active: #3b3d45;
+  --hds-table-header-button-foreground-color-hover: #3b3d45;
+  --hds-table-header-button-foreground-color-sorted-active: #0046d1;
+  --hds-table-header-button-foreground-color-sorted-hover: #0c56e9;
+  --hds-table-header-button-foreground-color-sorted-default: #1060ff;
+  --hds-table-header-button-surface-color-active: #dedfe3;
+  --hds-table-header-button-surface-color-hover: #ffffff;
   --hds-table-body-surface-color: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
@@ -10620,8 +10627,8 @@ button.hds-button[href]::after {
   border-radius: var(--hds-border-radius-x-small);
 }
 .hds-table__th-button:hover, .hds-table__th-button.mock-hover {
-  color: var(--hds-foreground-color-primary);
-  background-color: var(--hds-surface-color-interactive);
+  color: var(--hds-table-header-button-foreground-color-hover);
+  background-color: var(--hds-table-header-button-surface-color-hover);
   border-color: var(--hds-border-color-strong);
   box-shadow: var(--hds-elevation-low-box-shadow);
   cursor: pointer;
@@ -10643,20 +10650,20 @@ button.hds-button[href]::after {
   pointer-events: auto;
 }
 .hds-table__th-button:active, .hds-table__th-button.mock-active {
-  color: var(--hds-foreground-color-primary);
-  background-color: var(--hds-surface-color-interactive-active);
+  color: var(--hds-table-header-button-foreground-color-active);
+  background-color: var(--hds-table-header-button-surface-color-active);
   border-color: var(--hds-border-color-strong);
   box-shadow: none;
 }
 
 .hds-table__th-button--is-sorted {
-  color: var(--hds-foreground-color-action);
+  color: var(--hds-table-header-button-foreground-color-sorted-default);
 }
 .hds-table__th-button--is-sorted:hover, .hds-table__th-button--is-sorted.mock-hover {
-  color: var(--hds-foreground-color-action-hover);
+  color: var(--hds-table-header-button-foreground-color-sorted-hover);
 }
 .hds-table__th-button--is-sorted:active, .hds-table__th-button--is-sorted.mock-active {
-  color: var(--hds-foreground-color-action-active);
+  color: var(--hds-table-header-button-foreground-color-sorted-active);
 }
 
 .hds-table__th-button-aria-label-hidden-segment {

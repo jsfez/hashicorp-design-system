@@ -23384,6 +23384,261 @@
         "tall"
       ]
     },
+    "hds-table-header-button-foreground-color-active": {
+      "key": "{table.header.button.foreground.color.active}",
+      "$type": "color",
+      "$value": "#3b3d45",
+      "$modes": {
+        "default": "#3b3d45",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{foreground.color.primary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-hover": {
+      "key": "{table.header.button.foreground.color.hover}",
+      "$type": "color",
+      "$value": "#3b3d45",
+      "$modes": {
+        "default": "#3b3d45",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{foreground.color.primary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-active": {
+      "key": "{table.header.button.foreground.color.sorted.active}",
+      "$type": "color",
+      "$value": "#0046d1",
+      "$modes": {
+        "default": "#0046d1",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{foreground.color.action-active}",
+        "$modes": {
+          "default": "{foreground.color.action-active}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-hover": {
+      "key": "{table.header.button.foreground.color.sorted.hover}",
+      "$type": "color",
+      "$value": "#0c56e9",
+      "$modes": {
+        "default": "#0c56e9",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{foreground.color.action-hover}",
+        "$modes": {
+          "default": "{foreground.color.action-hover}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-default": {
+      "key": "{table.header.button.foreground.color.sorted.default}",
+      "$type": "color",
+      "$value": "#1060ff",
+      "$modes": {
+        "default": "#1060ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{foreground.color.action}",
+        "$modes": {
+          "default": "{foreground.color.action}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.default}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-default",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "default"
+      ]
+    },
+    "hds-table-header-button-surface-color-active": {
+      "key": "{table.header.button.surface.color.active}",
+      "$type": "color",
+      "$value": "#dedfe3",
+      "$modes": {
+        "default": "#dedfe3",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.interactive-active}",
+        "$modes": {
+          "default": "{surface.color.interactive-active}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.active}"
+      },
+      "name": "hds-table-header-button-surface-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-surface-color-hover": {
+      "key": "{table.header.button.surface.color.hover}",
+      "$type": "color",
+      "$value": "#ffffff",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.interactive}",
+        "$modes": {
+          "default": "{surface.color.interactive}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.hover}"
+      },
+      "name": "hds-table-header-button-surface-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "hover"
+      ]
+    },
     "hds-table-body-surface-color": {
       "key": "{table.body.surface.color}",
       "$type": "color",
@@ -50168,6 +50423,261 @@
         "padding",
         "vertical",
         "tall"
+      ]
+    },
+    "hds-table-header-button-foreground-color-active": {
+      "key": "{table.header.button.foreground.color.active}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#161616",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-hover": {
+      "key": "{table.header.button.foreground.color.hover}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#161616",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-active": {
+      "key": "{table.header.button.foreground.color.sorted.active}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#0f62fe",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-active}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-hover": {
+      "key": "{table.header.button.foreground.color.sorted.hover}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#0043ce",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-hover}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-default": {
+      "key": "{table.header.button.foreground.color.sorted.default}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#0f62fe",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.default}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-default",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "default"
+      ]
+    },
+    "hds-table-header-button-surface-color-active": {
+      "key": "{table.header.button.surface.color.active}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#c6c6c6",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive-active}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.active}"
+      },
+      "name": "hds-table-header-button-surface-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-surface-color-hover": {
+      "key": "{table.header.button.surface.color.hover}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.hover}"
+      },
+      "name": "hds-table-header-button-surface-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "hover"
       ]
     },
     "hds-table-body-surface-color": {
@@ -76956,6 +77466,261 @@
         "tall"
       ]
     },
+    "hds-table-header-button-foreground-color-active": {
+      "key": "{table.header.button.foreground.color.active}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#161616",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-hover": {
+      "key": "{table.header.button.foreground.color.hover}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#161616",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-active": {
+      "key": "{table.header.button.foreground.color.sorted.active}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#0f62fe",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-active}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-hover": {
+      "key": "{table.header.button.foreground.color.sorted.hover}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#0043ce",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-hover}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-default": {
+      "key": "{table.header.button.foreground.color.sorted.default}",
+      "$type": "color",
+      "$value": "#161616",
+      "$modes": {
+        "default": "#0f62fe",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.default}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-default",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "default"
+      ]
+    },
+    "hds-table-header-button-surface-color-active": {
+      "key": "{table.header.button.surface.color.active}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#c6c6c6",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive-active}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.active}"
+      },
+      "name": "hds-table-header-button-surface-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-surface-color-hover": {
+      "key": "{table.header.button.surface.color.hover}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.hover}"
+      },
+      "name": "hds-table-header-button-surface-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "hover"
+      ]
+    },
     "hds-table-body-surface-color": {
       "key": "{table.body.surface.color}",
       "$type": "color",
@@ -103742,6 +104507,261 @@
         "tall"
       ]
     },
+    "hds-table-header-button-foreground-color-active": {
+      "key": "{table.header.button.foreground.color.active}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-hover": {
+      "key": "{table.header.button.foreground.color.hover}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-active": {
+      "key": "{table.header.button.foreground.color.sorted.active}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#78a9ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-active}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-hover": {
+      "key": "{table.header.button.foreground.color.sorted.hover}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#a6c8ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-hover}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-default": {
+      "key": "{table.header.button.foreground.color.sorted.default}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#78a9ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.default}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-default",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "default"
+      ]
+    },
+    "hds-table-header-button-surface-color-active": {
+      "key": "{table.header.button.surface.color.active}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#6f6f6f",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive-active}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.active}"
+      },
+      "name": "hds-table-header-button-surface-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-surface-color-hover": {
+      "key": "{table.header.button.surface.color.hover}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#393939",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.hover}"
+      },
+      "name": "hds-table-header-button-surface-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "hover"
+      ]
+    },
     "hds-table-body-surface-color": {
       "key": "{table.body.surface.color}",
       "$type": "color",
@@ -130526,6 +131546,261 @@
         "padding",
         "vertical",
         "tall"
+      ]
+    },
+    "hds-table-header-button-foreground-color-active": {
+      "key": "{table.header.button.foreground.color.active}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-hover": {
+      "key": "{table.header.button.foreground.color.hover}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.primary}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-active": {
+      "key": "{table.header.button.foreground.color.sorted.active}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#78a9ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-active}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.active}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "active"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-hover": {
+      "key": "{table.header.button.foreground.color.sorted.hover}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#a6c8ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action-hover}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.hover}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "hover"
+      ]
+    },
+    "hds-table-header-button-foreground-color-sorted-default": {
+      "key": "{table.header.button.foreground.color.sorted.default}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$modes": {
+        "default": "#78a9ff",
+        "cds-g0": "#161616",
+        "cds-g10": "#161616",
+        "cds-g90": "#f4f4f4",
+        "cds-g100": "#f4f4f4"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.textPrimary}",
+        "$modes": {
+          "default": "{foreground.color.action}",
+          "cds-g0": "{carbon.themes.white.textPrimary}",
+          "cds-g10": "{carbon.themes.g10.textPrimary}",
+          "cds-g90": "{carbon.themes.g90.textPrimary}",
+          "cds-g100": "{carbon.themes.g100.textPrimary}"
+        },
+        "key": "{table.header.button.foreground.color.sorted.default}"
+      },
+      "name": "hds-table-header-button-foreground-color-sorted-default",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "foreground",
+        "color",
+        "sorted",
+        "default"
+      ]
+    },
+    "hds-table-header-button-surface-color-active": {
+      "key": "{table.header.button.surface.color.active}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#525252",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive-active}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.active}"
+      },
+      "name": "hds-table-header-button-surface-color-active",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "active"
+      ]
+    },
+    "hds-table-header-button-surface-color-hover": {
+      "key": "{table.header.button.surface.color.hover}",
+      "$type": "color",
+      "$value": "rgba(0, 0, 0, 0)",
+      "$modes": {
+        "default": "#262626",
+        "cds-g0": "transparent",
+        "cds-g10": "transparent",
+        "cds-g90": "transparent",
+        "cds-g100": "transparent"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "transparent",
+        "$modes": {
+          "default": "{surface.color.interactive}",
+          "cds-g0": "transparent",
+          "cds-g10": "transparent",
+          "cds-g90": "transparent",
+          "cds-g100": "transparent"
+        },
+        "key": "{table.header.button.surface.color.hover}"
+      },
+      "name": "hds-table-header-button-surface-color-hover",
+      "attributes": {
+        "category": "table"
+      },
+      "path": [
+        "table",
+        "header",
+        "button",
+        "surface",
+        "color",
+        "hover"
       ]
     },
     "hds-table-body-surface-color": {

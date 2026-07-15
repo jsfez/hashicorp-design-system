@@ -505,6 +505,13 @@
   --hds-table-cell-surface-color-selected-hover: var(--hds-surface-color-primary);
   --hds-table-cell-surface-color-striped-default: var(--hds-surface-color-faint);
   --hds-table-cell-surface-color-striped-hover: var(--hds-surface-color-faint);
+  --hds-table-header-button-foreground-color-active: var(--hds-foreground-color-primary);
+  --hds-table-header-button-foreground-color-hover: var(--hds-foreground-color-primary);
+  --hds-table-header-button-foreground-color-sorted-active: var(--hds-foreground-color-action-active);
+  --hds-table-header-button-foreground-color-sorted-default: var(--hds-foreground-color-action);
+  --hds-table-header-button-foreground-color-sorted-hover: var(--hds-foreground-color-action-hover);
+  --hds-table-header-button-surface-color-active: var(--hds-surface-color-interactive-active);
+  --hds-table-header-button-surface-color-hover: var(--hds-surface-color-interactive);
   --hds-table-header-cell-padding-horizontal-medium: 16px;
   --hds-table-header-cell-padding-horizontal-short: 16px;
   --hds-table-header-cell-padding-horizontal-tall: 16px;
