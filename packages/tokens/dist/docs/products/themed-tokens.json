@@ -5541,6 +5541,27 @@
         "tall"
       ]
     },
+    "hds-advanced-table-cell-surface-color-default": {
+      "key": "{advanced-table.cell.surface.color.default}",
+      "$type": "color",
+      "$value": "#ffffff",
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.primary}",
+        "key": "{advanced-table.cell.surface.color.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "default"
+      ]
+    },
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
@@ -33295,6 +33316,27 @@
         "padding",
         "vertical",
         "tall"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-default": {
+      "key": "{advanced-table.cell.surface.color.default}",
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.primary}",
+        "key": "{advanced-table.cell.surface.color.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "default"
       ]
     },
     "hds-advanced-table-cell-surface-color-hover": {
@@ -61071,6 +61113,27 @@
         "tall"
       ]
     },
+    "hds-advanced-table-cell-surface-color-default": {
+      "key": "{advanced-table.cell.surface.color.default}",
+      "$type": "color",
+      "$value": "#ffffff",
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.primary}",
+        "key": "{advanced-table.cell.surface.color.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "default"
+      ]
+    },
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
@@ -88845,6 +88908,27 @@
         "tall"
       ]
     },
+    "hds-advanced-table-cell-surface-color-default": {
+      "key": "{advanced-table.cell.surface.color.default}",
+      "$type": "color",
+      "$value": "#393939",
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.primary}",
+        "key": "{advanced-table.cell.surface.color.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "default"
+      ]
+    },
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
@@ -116617,6 +116701,27 @@
         "padding",
         "vertical",
         "tall"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-default": {
+      "key": "{advanced-table.cell.surface.color.default}",
+      "$type": "color",
+      "$value": "#262626",
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.primary}",
+        "key": "{advanced-table.cell.surface.color.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "default"
       ]
     },
     "hds-advanced-table-cell-surface-color-hover": {

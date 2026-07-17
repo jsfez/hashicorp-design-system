@@ -158,6 +158,7 @@
   --hds-advanced-table-cell-padding-vertical-short: 6px;
   --hds-advanced-table-cell-padding-vertical-medium: 14px;
   --hds-advanced-table-cell-padding-vertical-tall: 22px;
+  --hds-advanced-table-cell-surface-color-default: #ffffff;
   --hds-advanced-table-cell-surface-color-hover: #ffffff;
   --hds-advanced-table-cell-surface-color-striped-default: #fafafa;
   --hds-advanced-table-cell-surface-color-striped-hover: #fafafa;

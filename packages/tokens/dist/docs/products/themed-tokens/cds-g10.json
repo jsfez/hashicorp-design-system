@@ -5537,6 +5537,27 @@
     ]
   },
   {
+    "key": "{advanced-table.cell.surface.color.default}",
+    "$type": "color",
+    "$value": "#ffffff",
+    "original": {
+      "$type": "color",
+      "$value": "{surface.color.primary}",
+      "key": "{advanced-table.cell.surface.color.default}"
+    },
+    "name": "hds-advanced-table-cell-surface-color-default",
+    "attributes": {
+      "category": "advanced-table"
+    },
+    "path": [
+      "advanced-table",
+      "cell",
+      "surface",
+      "color",
+      "default"
+    ]
+  },
+  {
     "key": "{advanced-table.cell.surface.color.hover}",
     "$type": "color",
     "$value": "rgba(141, 141, 141, 0.12)",

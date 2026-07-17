@@ -5054,6 +5054,9 @@
     --hds-advanced-table-cell-padding-vertical-tall: var(
       --hds-table-cell-padding-vertical-tall
     );
+    --hds-advanced-table-cell-surface-color-default: var(
+      --hds-surface-color-primary
+    );
     --hds-advanced-table-cell-surface-color-hover: var(
       --hds-table-cell-surface-color-hover
     );

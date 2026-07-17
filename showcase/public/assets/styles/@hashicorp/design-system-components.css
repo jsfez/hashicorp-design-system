@@ -162,6 +162,7 @@
   --hds-advanced-table-cell-padding-vertical-short: 6px;
   --hds-advanced-table-cell-padding-vertical-medium: 14px;
   --hds-advanced-table-cell-padding-vertical-tall: 22px;
+  --hds-advanced-table-cell-surface-color-default: #ffffff;
   --hds-advanced-table-cell-surface-color-hover: #ffffff;
   --hds-advanced-table-cell-surface-color-striped-default: #fafafa;
   --hds-advanced-table-cell-surface-color-striped-hover: #fafafa;
@@ -2158,7 +2159,7 @@
   font-family: var(--hds-typography-body-200-font-family);
   line-height: var(--hds-typography-body-200-line-height);
   text-align: left;
-  background-color: var(--hds-advanced-table-body-surface-color);
+  background-color: var(--hds-advanced-table-cell-surface-color-default);
 }
 .hds-advanced-table__tbody .hds-advanced-table__th:focus-visible, .hds-advanced-table__tbody .hds-advanced-table__th.mock-focus,
 .hds-advanced-table__tbody .hds-advanced-table__td:focus-visible,
