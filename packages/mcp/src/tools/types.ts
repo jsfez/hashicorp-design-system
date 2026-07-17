@@ -1,18 +1,12 @@
 import type { ToolCallback } from "@modelcontextprotocol/sdk/server/mcp.js";
-import type {
-  AnySchema,
-  ZodRawShapeCompat,
-} from "@modelcontextprotocol/sdk/server/zod-compat.js";
+import type { ZodRawShapeCompat } from "@modelcontextprotocol/sdk/server/zod-compat.js";
 import type { ToolAnnotations } from "@modelcontextprotocol/sdk/types.js";
 
 export interface McpTool<
-  InputArgs extends ZodRawShapeCompat | AnySchema | undefined =
+  InputArgs extends ZodRawShapeCompat | undefined =
     | ZodRawShapeCompat
-    | AnySchema
     | undefined,
-  OutputArgs extends ZodRawShapeCompat | AnySchema =
-    | ZodRawShapeCompat
-    | AnySchema,
+  OutputArgs extends ZodRawShapeCompat = ZodRawShapeCompat,
 > {
   name: string;
   config: {
