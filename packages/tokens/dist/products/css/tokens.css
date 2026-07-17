@@ -729,6 +729,8 @@
   --hds-rich-tooltip-toggle-foreground-color-hover: #3b3d45;
   --hds-rich-tooltip-toggle-foreground-color-active: #656a76;
   --hds-rich-tooltip-toggle-icon-size: 1em;
+  --hds-segmented-group-gap: 0px;
+  --hds-segmented-group-margin-left: -1px;
   --hds-tabs-tab-border-color-default: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-color-hover: rgba(0, 0, 0, 0);
   --hds-tabs-tab-border-radius: 5px;

@@ -544,6 +544,8 @@
   --hds-rich-tooltip-toggle-foreground-color-default: #c6c6c6;
   --hds-rich-tooltip-toggle-gap-horizontal: 8px;
   --hds-rich-tooltip-toggle-icon-size: 14px;
+  --hds-segmented-group-gap: 1px;
+  --hds-segmented-group-margin-left: 0px;
   --hds-surface-base-box-shadow: none;
   --hds-surface-high-box-shadow: none;
   --hds-surface-higher-box-shadow: none;

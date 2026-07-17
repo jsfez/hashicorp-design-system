@@ -980,6 +980,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   );
   --hds-rich-tooltip-toggle-gap-horizontal: 4px;
   --hds-rich-tooltip-toggle-icon-size: 1em;
+  --hds-segmented-group-gap: 0px;
+  --hds-segmented-group-margin-left: -1px;
   --hds-surface-base-box-shadow: 0 0 0 1px #656a7633;
   --hds-surface-high-box-shadow:
     0 0 0 1px #656a7640, 0px 2px 3px 0px #656a7626,
@@ -1711,6 +1713,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-rich-tooltip-toggle-foreground-color-default: #525252;
     --hds-rich-tooltip-toggle-gap-horizontal: 8px;
     --hds-rich-tooltip-toggle-icon-size: 14px;
+    --hds-segmented-group-gap: 1px;
+    --hds-segmented-group-margin-left: 0px;
     --hds-surface-base-box-shadow: none;
     --hds-surface-high-box-shadow: none;
     --hds-surface-higher-box-shadow: none;
@@ -2410,6 +2414,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
     --hds-rich-tooltip-toggle-foreground-color-default: #c6c6c6;
     --hds-rich-tooltip-toggle-gap-horizontal: 8px;
     --hds-rich-tooltip-toggle-icon-size: 14px;
+    --hds-segmented-group-gap: 1px;
+    --hds-segmented-group-margin-left: 0px;
     --hds-surface-base-box-shadow: none;
     --hds-surface-high-box-shadow: none;
     --hds-surface-higher-box-shadow: none;
@@ -3098,6 +3104,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-rich-tooltip-toggle-foreground-color-default: #525252;
   --hds-rich-tooltip-toggle-gap-horizontal: 8px;
   --hds-rich-tooltip-toggle-icon-size: 14px;
+  --hds-segmented-group-gap: 1px;
+  --hds-segmented-group-margin-left: 0px;
   --hds-surface-base-box-shadow: none;
   --hds-surface-high-box-shadow: none;
   --hds-surface-higher-box-shadow: none;
@@ -3785,6 +3793,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-rich-tooltip-toggle-foreground-color-default: #c6c6c6;
   --hds-rich-tooltip-toggle-gap-horizontal: 8px;
   --hds-rich-tooltip-toggle-icon-size: 14px;
+  --hds-segmented-group-gap: 1px;
+  --hds-segmented-group-margin-left: 0px;
   --hds-surface-base-box-shadow: none;
   --hds-surface-high-box-shadow: none;
   --hds-surface-higher-box-shadow: none;
@@ -4471,6 +4481,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-rich-tooltip-toggle-foreground-color-default: #525252;
   --hds-rich-tooltip-toggle-gap-horizontal: 8px;
   --hds-rich-tooltip-toggle-icon-size: 14px;
+  --hds-segmented-group-gap: 1px;
+  --hds-segmented-group-margin-left: 0px;
   --hds-surface-base-box-shadow: none;
   --hds-surface-high-box-shadow: none;
   --hds-surface-higher-box-shadow: none;
@@ -5157,6 +5169,8 @@ scoped to its corresponding `:root`/`.hds-theme-*`/`.hds-mode-*` selector.
   --hds-rich-tooltip-toggle-foreground-color-default: #c6c6c6;
   --hds-rich-tooltip-toggle-gap-horizontal: 8px;
   --hds-rich-tooltip-toggle-icon-size: 14px;
+  --hds-segmented-group-gap: 1px;
+  --hds-segmented-group-margin-left: 0px;
   --hds-surface-base-box-shadow: none;
   --hds-surface-high-box-shadow: none;
   --hds-surface-higher-box-shadow: none;

@@ -23926,6 +23926,75 @@
     ]
   },
   {
+    "key": "{segmented-group.gap}",
+    "$type": "dimension",
+    "$value": "1px",
+    "unit": "px",
+    "$modes": {
+      "default": "0",
+      "cds-g0": "1",
+      "cds-g10": "1",
+      "cds-g90": "1",
+      "cds-g100": "1"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "1",
+      "unit": "px",
+      "$modes": {
+        "default": "0",
+        "cds-g0": "1",
+        "cds-g10": "1",
+        "cds-g90": "1",
+        "cds-g100": "1"
+      },
+      "key": "{segmented-group.gap}"
+    },
+    "name": "hds-segmented-group-gap",
+    "attributes": {
+      "category": "segmented-group"
+    },
+    "path": [
+      "segmented-group",
+      "gap"
+    ]
+  },
+  {
+    "key": "{segmented-group.margin.left}",
+    "$type": "dimension",
+    "$value": "0px",
+    "unit": "px",
+    "$modes": {
+      "default": "-1",
+      "cds-g0": "0",
+      "cds-g10": "0",
+      "cds-g90": "0",
+      "cds-g100": "0"
+    },
+    "original": {
+      "$type": "dimension",
+      "$value": "0",
+      "unit": "px",
+      "$modes": {
+        "default": "-1",
+        "cds-g0": "0",
+        "cds-g10": "0",
+        "cds-g90": "0",
+        "cds-g100": "0"
+      },
+      "key": "{segmented-group.margin.left}"
+    },
+    "name": "hds-segmented-group-margin-left",
+    "attributes": {
+      "category": "segmented-group"
+    },
+    "path": [
+      "segmented-group",
+      "margin",
+      "left"
+    ]
+  },
+  {
     "key": "{tabs.tab.border.color.default}",
     "$type": "color",
     "$value": "#c6c6c6",
