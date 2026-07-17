@@ -1883,6 +1883,13 @@ export const IconRegistry = {
         },
         carbon: () => import('./carbon/circle.js')
     },
+    'circle-dash': {
+        flight: {
+            16: () => import('./flight/circle-dash-16.js'),
+            24: () => import('./flight/circle-dash-24.js')
+        },
+        carbon: null
+    },
     'circle-dot': {
         flight: {
             16: () => import('./flight/circle-dot-16.js'),
@@ -1994,6 +2001,13 @@ export const IconRegistry = {
             24: () => import('./flight/hexagon-fill-24.js')
         },
         carbon: () => import('./carbon/hexagon-fill.js')
+    },
+    'incomplete-normal': {
+        flight: {
+            16: () => import('./flight/incomplete-normal-16.js'),
+            24: () => import('./flight/incomplete-normal-24.js')
+        },
+        carbon: null
     },
     labyrinth: {
         flight: {
@@ -2267,6 +2281,13 @@ export const IconRegistry = {
             24: () => import('./flight/check-circle-fill-24.js')
         },
         carbon: () => import('./carbon/check-circle-fill.js')
+    },
+    'error-filled': {
+        flight: {
+            16: () => import('./flight/error-filled-16.js'),
+            24: () => import('./flight/error-filled-24.js')
+        },
+        carbon: null
     },
     'check-diamond': {
         flight: {
