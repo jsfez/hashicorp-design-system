@@ -1,6 +1,6 @@
 # Token Diff — Phase A (carbonization mapping proposal)
 
-- Generated: 2026-07-17T10:50:07.409Z
+- Generated: 2026-07-17T12:05:57.912Z
 - Pre ref: `main` (prefix `--token-`) — 442 tokens
 - Post: working tree (prefix `--hds-`) — 801 tokens
 
@@ -12,7 +12,9 @@
 | `prefix-plus-renaming__palette-colors` | 42 |
 | `prefix-plus-renaming__product-colors` | 86 |
 | `prefix-plus-renaming__semantic-colors` | 46 |
-| `prefix-plus-renaming__other` | 10 |
+| `prefix-plus-renaming__focus-ring` | 2 |
+| `prefix-plus-renaming__transition-function` | 2 |
+| `prefix-plus-renaming__other` | 6 |
 | `removed` | 16 |
 | `added` | 377 |
 
@@ -474,7 +476,25 @@ Rule: `color-{semantic}-{rest}` → `{semantic}-color-{rest}`.
 | `--token-color-surface-success` | `--hds-surface-color-success` | S0, S1 |
 | `--token-color-surface-warning` | `--hds-surface-color-warning` | S0, S1 |
 
-## `prefix-plus-renaming__other` — 10
+## `prefix-plus-renaming__focus-ring` — 2
+
+Rule: `focus-ring-{variant}-box-shadow` → `focus-ring-box-shadow-{variant}`.
+
+| Before (`--token-*`) | After (`--hds-*`) | Signals |
+| --- | --- | --- |
+| `--token-focus-ring-action-box-shadow` | `--hds-focus-ring-box-shadow-action` | S0, S1 |
+| `--token-focus-ring-critical-box-shadow` | `--hds-focus-ring-box-shadow-critical` | S0, S1 |
+
+## `prefix-plus-renaming__transition-function` — 2
+
+Rule: `{rest}-transition-function` → `{rest}-transition-timing-function`.
+
+| Before (`--token-*`) | After (`--hds-*`) | Signals |
+| --- | --- | --- |
+| `--token-tabs-indicator-transition-function` | `--hds-tabs-indicator-transition-timing-function` | S3 |
+| `--token-tooltip-transition-function` | `--hds-tooltip-transition-timing-function` | S3 |
+
+## `prefix-plus-renaming__other` — 6
 
 Structural renames that do not fit a systematic rule — review each.
 
@@ -484,12 +504,8 @@ Structural renames that do not fit a systematic rule — review each.
 | `--token-app-side-nav-body-list-item-content-spacing-horizontal` | `--hds-app-side-nav-body-list-item-padding-horizontal` | S3 |
 | `--token-app-side-nav-body-list-item-spacing-vertical` | `--hds-app-side-nav-body-list-margin-vertical` | S3 |
 | `--token-app-side-nav-color-surface-primary` | `--hds-app-side-nav-wrapper-surface-color` | S3 |
-| `--token-focus-ring-action-box-shadow` | `--hds-focus-ring-box-shadow-action` | S0, S1 |
-| `--token-focus-ring-critical-box-shadow` | `--hds-focus-ring-box-shadow-critical` | S0, S1 |
 | `--token-form-control-base-foreground-placeholder-color` | `--hds-form-control-base-placeholder-foreground-color` | S2 |
 | `--token-form-control-base-foreground-value-color` | `--hds-form-control-base-foreground-color` | S3 |
-| `--token-tabs-indicator-transition-function` | `--hds-tabs-indicator-transition-timing-function` | S3 |
-| `--token-tooltip-transition-function` | `--hds-tooltip-transition-timing-function` | S3 |
 
 ## `removed` — 16
 

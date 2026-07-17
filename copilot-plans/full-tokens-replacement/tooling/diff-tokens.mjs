@@ -310,6 +310,8 @@ const CATEGORY_ORDER = [
   'prefix-plus-renaming__palette-colors',
   'prefix-plus-renaming__product-colors',
   'prefix-plus-renaming__semantic-colors',
+  'prefix-plus-renaming__focus-ring',
+  'prefix-plus-renaming__transition-function',
   'prefix-plus-renaming__other',
   'removed',
   'added',
@@ -320,6 +322,20 @@ function colorReorderExpected(preBare) {
   const tail = preBare.slice('color-'.length).split('-').filter(Boolean);
   if (tail.length < 2) return null;
   return `${tail[0]}-color-${tail.slice(1).join('-')}`;
+}
+
+/** Expected focus-ring post name: `focus-ring-{variant}-box-shadow` → `focus-ring-box-shadow-{variant}`. */
+function focusRingReorderExpected(preBare) {
+  const m = /^focus-ring-(.+)-box-shadow$/.exec(preBare);
+  if (!m) return null;
+  return `focus-ring-box-shadow-${m[1]}`;
+}
+
+/** Expected transition-function post name: `{rest}-transition-function` → `{rest}-transition-timing-function`. */
+function transitionFunctionExpected(preBare) {
+  const suffix = '-transition-function';
+  if (!preBare.endsWith(suffix)) return null;
+  return `${preBare.slice(0, -suffix.length)}-transition-timing-function`;
 }
 
 /**
@@ -341,6 +357,12 @@ function classify(before, after) {
   }
   if (preBare.startsWith('color-') && postBare === colorReorderExpected(preBare)) {
     return 'prefix-plus-renaming__semantic-colors';
+  }
+  if (postBare === focusRingReorderExpected(preBare)) {
+    return 'prefix-plus-renaming__focus-ring';
+  }
+  if (postBare === transitionFunctionExpected(preBare)) {
+    return 'prefix-plus-renaming__transition-function';
   }
   return 'prefix-plus-renaming__other';
 }
@@ -540,6 +562,10 @@ function writeReports({ preNames, postNames, resolutions, added, changesetPairs,
       'Rule: `color-{product}-…` → `product-{product}-…-color`.',
     'prefix-plus-renaming__semantic-colors':
       'Rule: `color-{semantic}-{rest}` → `{semantic}-color-{rest}`.',
+    'prefix-plus-renaming__focus-ring':
+      'Rule: `focus-ring-{variant}-box-shadow` → `focus-ring-box-shadow-{variant}`.',
+    'prefix-plus-renaming__transition-function':
+      'Rule: `{rest}-transition-function` → `{rest}-transition-timing-function`.',
     'prefix-plus-renaming__other':
       'Structural renames that do not fit a systematic rule — review each.',
     removed:

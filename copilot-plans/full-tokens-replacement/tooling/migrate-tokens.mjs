@@ -3,14 +3,14 @@
 /*
  * migrate-tokens.mjs — Phase B: token-usage migrator + verification
  *
- * Reusable, dependency-free applier. It takes the HUMAN-CONFIRMED token map
- * produced by Phase A (`token-map.json`) and mechanically rewrites every stale
+ * Reusable, dependency-free applier. It takes the token map produced by Phase A
+ * (`token-map.generated.json`) and mechanically rewrites every stale
  * pre-carbonization token usage in a target codebase to its new name.
  *
  * This file is the REUSABLE CORE — do not edit it per repo. All repo-specific
  * inputs live in an external JSON config (see ./config/migrate.hds.config.json).
  * Retarget by copying this file unchanged, authoring a new config, and pointing
- * it at the `token-map.json` from Phase A.
+ * it at the `token-map.generated.json` from Phase A.
  *
  * What it does:
  *   - Loads the map; consumes every category array uniformly. Entries with a
@@ -81,7 +81,7 @@ function loadConfig(configPath) {
   } catch (e) {
     fail(`cannot read/parse config: ${path} (${e.message})`);
   }
-  cfg.mapPath ??= 'reports/hds/token-map.json';
+  cfg.mapPath ??= 'reports/hds/token-map.generated.json';
   cfg.reportDir ??= 'reports/hds';
   cfg.prefix ??= '--token-';
   cfg.sassPrefixes ??= [];

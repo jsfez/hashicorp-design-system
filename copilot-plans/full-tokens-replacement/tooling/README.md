@@ -6,9 +6,9 @@ from the **pre-carbonization** token set (`--token-*`, as on `main`) to the
 [`../generated-plan.md`](../generated-plan.md).
 
 - **Phase A — `diff-tokens.mjs`** — diffs the pre/post token **names** and
-  proposes an old→new **token map** for human review. One-off for this monorepo;
+  generates the old→new **token map**. One-off for this monorepo;
   no config, no CLI args.
-- **Phase B — `migrate-tokens.mjs`** — applies the **human-confirmed** map to a
+- **Phase B — `migrate-tokens.mjs`** — applies the generated map to a
   target codebase, rewrites stale token usages, flags what has no mapping, and
   verifies zero stale names remain. Reusable and config-driven.
 
@@ -46,19 +46,21 @@ Writes to `reports/hds/`:
   - `prefix-plus-renaming__palette-colors` — `color-palette-{hue}-{step}` → `core-color-{hue}-{step}`.
   - `prefix-plus-renaming__product-colors` — `color-{product}-…` → `product-{product}-…-color`.
   - `prefix-plus-renaming__semantic-colors` — `color-{semantic}-{rest}` → `{semantic}-color-{rest}`.
+  - `prefix-plus-renaming__focus-ring` — `focus-ring-{variant}-box-shadow` → `focus-ring-box-shadow-{variant}`.
+  - `prefix-plus-renaming__transition-function` — `{rest}-transition-function` → `{rest}-transition-timing-function`.
   - `prefix-plus-renaming__other` — structural renames with no systematic rule (review each).
   - `removed` — no successor found (`after: null`); decide manually or flag with a TODO.
   - `added` — brand-new post tokens (`before: null`); informational, not applied by Phase B.
 - `token-diff.md` — detailed human report (per-category and per-signal
   breakdowns, confidence, review buckets).
 
-### Confirm the map
+### The generated map is the source of truth
 
-Review `token-diff.md`, edit/complete `token-map.generated.json`, then save it as
-`reports/hds/token-map.json` — the confirmed source of truth consumed by Phase B.
-Pay special attention to the two review buckets: **`prefix-plus-renaming__other`**
-(fuzzy / one-off renames) and **`removed`** (`after: null`). Phase A never
-overwrites `token-map.json`.
+`token-map.generated.json` is consumed directly by Phase B — there is **no
+separate confirmation step**. Phase A (re)writes it on every run (safe to
+overwrite), and `token-diff.md` is the detailed audit companion. If a run ever
+surfaces something questionable (e.g. in the **`prefix-plus-renaming__other`** or
+**`removed`** buckets), edit the generated JSON in place before running Phase B.
 
 ## Phase B — apply the map
 
@@ -67,7 +69,7 @@ node copilot-plans/full-tokens-replacement/tooling/migrate-tokens.mjs \
   --config copilot-plans/full-tokens-replacement/tooling/config/migrate.hds.config.json
 ```
 
-Consumes every category array of the confirmed map uniformly (the key names do
+Consumes every category array of the generated map uniformly (the key names do
 not matter). For each entry with a non-null `after` it replaces `var(--old)` and
 bare `--old` with `--new` (mechanical, idempotent, position-preserving). Entries
 with `after: null` get a `🚧 TODO [HDS-TOKEN-CARBONIZATION]` marker comment at the
@@ -82,7 +84,7 @@ Writes `token-migration.md` (human) and `token-migration.json` (machine) to
 
 | Key | Purpose | HDS default |
 | --- | --- | --- |
-| `mapPath` | Confirmed token map (relative to the config file) | `reports/hds/token-map.json` |
+| `mapPath` | Generated token map (relative to the config file) | `reports/hds/token-map.generated.json` |
 | `reportDir` | Where reports are written | `reports/hds` |
 | `prefix` | **Pre** prefix to scan for (what `before` names carry) | `--token-` |
 | `sassPrefixes` | Optional secondary prefixes (e.g. `$token-`) | `[]` |

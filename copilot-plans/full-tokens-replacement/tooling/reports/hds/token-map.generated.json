@@ -1671,6 +1671,26 @@
       "after": "--hds-surface-color-warning"
     }
   ],
+  "prefix-plus-renaming__focus-ring": [
+    {
+      "before": "--token-focus-ring-action-box-shadow",
+      "after": "--hds-focus-ring-box-shadow-action"
+    },
+    {
+      "before": "--token-focus-ring-critical-box-shadow",
+      "after": "--hds-focus-ring-box-shadow-critical"
+    }
+  ],
+  "prefix-plus-renaming__transition-function": [
+    {
+      "before": "--token-tabs-indicator-transition-function",
+      "after": "--hds-tabs-indicator-transition-timing-function"
+    },
+    {
+      "before": "--token-tooltip-transition-function",
+      "after": "--hds-tooltip-transition-timing-function"
+    }
+  ],
   "prefix-plus-renaming__other": [
     {
       "before": "--token-app-header-home-link-size",
@@ -1689,28 +1709,12 @@
       "after": "--hds-app-side-nav-wrapper-surface-color"
     },
     {
-      "before": "--token-focus-ring-action-box-shadow",
-      "after": "--hds-focus-ring-box-shadow-action"
-    },
-    {
-      "before": "--token-focus-ring-critical-box-shadow",
-      "after": "--hds-focus-ring-box-shadow-critical"
-    },
-    {
       "before": "--token-form-control-base-foreground-placeholder-color",
       "after": "--hds-form-control-base-placeholder-foreground-color"
     },
     {
       "before": "--token-form-control-base-foreground-value-color",
       "after": "--hds-form-control-base-foreground-color"
-    },
-    {
-      "before": "--token-tabs-indicator-transition-function",
-      "after": "--hds-tabs-indicator-transition-timing-function"
-    },
-    {
-      "before": "--token-tooltip-transition-function",
-      "after": "--hds-tooltip-transition-timing-function"
     }
   ],
   "removed": [
