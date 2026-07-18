@@ -7,6 +7,7 @@ import type { TemplateOnlyComponent } from '@ember/component/template-only';
 import { pageTitle } from 'ember-page-title';
 import { capitalize } from '@ember/string';
 import { eq } from 'ember-truth-helpers';
+import { array } from '@ember/helper';
 
 import ShwTextH1 from 'showcase/components/shw/text/h1';
 import ShwTextH2 from 'showcase/components/shw/text/h2';
@@ -170,22 +171,32 @@ const FormSelectCarbonizationIndex: TemplateOnlyComponent = <template>
         </:reference>
       </ShwCarbonizationComparisonGrid>
     {{/each}}
-    <ShwCarbonizationComparisonGrid @label="Disabled">
-      <:theming>
-        <HdsFormSelectBase disabled aria-label="disabled select" as |C|>
-          <C.Options>
-            <option selected>Lorem ipsum dolor</option>
-            <option>Sine qua non est</option>
-          </C.Options>
-        </HdsFormSelectBase>
-      </:theming>
-      <:reference>
-        <cds-select disabled value="lorem">
-          <cds-select-item value="lorem">Lorem ipsum dolor</cds-select-item>
-          <cds-select-item value="sine">Sine qua non est</cds-select-item>
-        </cds-select>
-      </:reference>
-    </ShwCarbonizationComparisonGrid>
+    {{#each (array "default" "hover") as |state|}}
+      <ShwCarbonizationComparisonGrid
+        @label="Disabled / {{capitalize state}}"
+        mock-state-value={{state}}
+        mock-state-selector="select"
+      >
+        <:theming>
+          <HdsFormSelectBase disabled aria-label="disabled select" as |C|>
+            <C.Options>
+              <option selected>Lorem ipsum dolor</option>
+              <option>Sine qua non est</option>
+            </C.Options>
+          </HdsFormSelectBase>
+        </:theming>
+        <:reference>
+          {{#if (eq state "default")}}
+            <cds-select disabled value="lorem">
+              <cds-select-item value="lorem">Lorem ipsum dolor</cds-select-item>
+              <cds-select-item value="sine">Sine qua non est</cds-select-item>
+            </cds-select>
+          {{else}}
+            <pre>TODO: static image here</pre>
+          {{/if}}
+        </:reference>
+      </ShwCarbonizationComparisonGrid>
+    {{/each}}
 
     <ShwDivider />
 
