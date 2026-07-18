@@ -124,28 +124,58 @@ const FormSelectCarbonizationIndex: TemplateOnlyComponent = <template>
         <:theming>
           <ShwFlex @gap="1rem" as |SF|>
             <SF.Item @label="Base">
-              <HdsFormSelectBase aria-label="base" as |C|>
-                <C.Options>
-                  <option selected>Lorem ipsum dolor</option>
-                  <option>Sine qua non est</option>
-                </C.Options>
-              </HdsFormSelectBase>
+              <ShwFlex @gap="1rem" as |SFN|>
+                <SFN.Item>
+                  <HdsFormSelectBase aria-label="base" as |C|>
+                    <C.Options>
+                      <option selected>Lorem ipsum dolor</option>
+                      <option>Sine qua non est</option>
+                    </C.Options>
+                  </HdsFormSelectBase>
+                </SFN.Item>
+                <SFN.Item>
+                  <HdsFormSelectBase aria-label="multiple" multiple as |C|>
+                    <C.Options>
+                      <option selected>Lorem ipsum dolor</option>
+                      <option>Sine qua non est</option>
+                    </C.Options>
+                  </HdsFormSelectBase>
+                </SFN.Item>
+              </ShwFlex>
             </SF.Item>
+
             <SF.Item @label="Invalid">
-              <HdsFormSelectBase
-                @isInvalid={{true}}
-                aria-label="invalid"
-                as |C|
-              >
-                <C.Options>
-                  <option selected>Lorem ipsum dolor</option>
-                  <option>Sine qua non est</option>
-                </C.Options>
-              </HdsFormSelectBase>
+              <ShwFlex @gap="1rem" as |SFN|>
+                <SFN.Item>
+                  <HdsFormSelectBase
+                    @isInvalid={{true}}
+                    aria-label="invalid"
+                    as |C|
+                  >
+                    <C.Options>
+                      <option selected>Lorem ipsum dolor</option>
+                      <option>Sine qua non est</option>
+                    </C.Options>
+                  </HdsFormSelectBase>
+                </SFN.Item>
+                <SFN.Item>
+                  <HdsFormSelectBase
+                    @isInvalid={{true}}
+                    aria-label="multiple invalid"
+                    multiple
+                    as |C|
+                  >
+                    <C.Options>
+                      <option selected>Lorem ipsum dolor</option>
+                      <option>Sine qua non est</option>
+                    </C.Options>
+                  </HdsFormSelectBase>
+                </SFN.Item>
+              </ShwFlex>
             </SF.Item>
           </ShwFlex>
         </:theming>
-        <:reference>
+        <:reference as |R|>
           {{#if (eq state "default")}}
             <ShwFlex @gap="1rem" as |SF|>
               <SF.Item @label="Base">
@@ -153,6 +183,7 @@ const FormSelectCarbonizationIndex: TemplateOnlyComponent = <template>
                   <cds-select-item value="lorem">Lorem ipsum dolor</cds-select-item>
                   <cds-select-item value="sine">Sine qua non est</cds-select-item>
                 </cds-select>
+                <R.NoEquivalent @isCompact={{true}} @entity="variant" />
               </SF.Item>
               <SF.Item @label="Invalid">
                 <cds-select
@@ -163,6 +194,7 @@ const FormSelectCarbonizationIndex: TemplateOnlyComponent = <template>
                   <cds-select-item value="lorem">Lorem ipsum dolor</cds-select-item>
                   <cds-select-item value="sine">Sine qua non est</cds-select-item>
                 </cds-select>
+                <R.NoEquivalent @isCompact={{true}} @entity="variant" />
               </SF.Item>
             </ShwFlex>
           {{else}}
@@ -178,12 +210,29 @@ const FormSelectCarbonizationIndex: TemplateOnlyComponent = <template>
         mock-state-selector="select"
       >
         <:theming>
-          <HdsFormSelectBase disabled aria-label="disabled select" as |C|>
-            <C.Options>
-              <option selected>Lorem ipsum dolor</option>
-              <option>Sine qua non est</option>
-            </C.Options>
-          </HdsFormSelectBase>
+          <ShwFlex @gap="1rem" as |SFN|>
+            <SFN.Item>
+              <HdsFormSelectBase disabled aria-label="disabled select" as |C|>
+                <C.Options>
+                  <option selected>Lorem ipsum dolor</option>
+                  <option>Sine qua non est</option>
+                </C.Options>
+              </HdsFormSelectBase>
+            </SFN.Item>
+            <SFN.Item>
+              <HdsFormSelectBase
+                disabled
+                aria-label="disabled select multiple"
+                multiple
+                as |C|
+              >
+                <C.Options>
+                  <option selected>Lorem ipsum dolor</option>
+                  <option>Sine qua non est</option>
+                </C.Options>
+              </HdsFormSelectBase>
+            </SFN.Item>
+          </ShwFlex>
         </:theming>
         <:reference>
           {{#if (eq state "default")}}
