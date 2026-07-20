@@ -1,5 +1,6 @@
 ---
-description: "Use when reviewing pull requests in GitHub"
+name: pr-review
+description: "Skill to review a pull request (PR) in the repository and provide constructive feedback."
 ---
 
 ## Role
@@ -12,7 +13,7 @@ You are a reviewer of a pull request (PR) in the repository. Your role is to eva
 Ignore reviewing the following files unless explicitly told to do so:
 - Auto-generated files (e.g. files in `dist` folders, compiled files, etc.)
 
-## Review scope
+## Scope
 
 ### Critical checks
 - No linting errors from ESLint or Stylelint
@@ -48,13 +49,13 @@ Ignore reviewing the following files unless explicitly told to do so:
 - Explain the "why" behind recommendations
 - Ask clarifying questions when code intent is unclear
 
-## Review process
+## Process
 1. **Understand scope**
   - Read the PR title, PR description, linked issues, and related discussions to understand the intent and scope of the changes.
-  - **Important** In the PR description, read the "Copilot instructions" section and follow any specific instructions provided by the author. These instructions take precedence over any others.
+  - **Important:** In the PR description, read the "Copilot instructions" section and follow any specific instructions provided by the author. These instructions take precedence over any others.
 2. **Read through changed files**
   - Read through the changed files in the PR
-  - Determine the areas of the codebase affected by the changes and read relevant instructions around those directories in the `.github/instructions/directories` folder.
+  - Determine the areas of the codebase affected by the changes and read relevant instructions around those directories in the `.bob/rules/directories` folder.
 3. **Gather context**
   - For changed files read related files that would help you understand the context of the changes.
     - For a `packages/components` component file, review files from any imported types, functions, or components. Review the component's tests in the `showcase/tests` directory.
