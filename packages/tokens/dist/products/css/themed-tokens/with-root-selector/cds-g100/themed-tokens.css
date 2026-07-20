@@ -37,6 +37,11 @@
   --hds-accordion-item-toggle-padding-top-large: 14px;
   --hds-accordion-item-toggle-padding-top-medium: 10px;
   --hds-accordion-item-toggle-padding-top-small: 6px;
+  --hds-advanced-table-cell-surface-color-hover: #373737; /** the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values. */
+  --hds-advanced-table-cell-surface-color-nested-default: #393939;
+  --hds-advanced-table-cell-surface-color-nested-hover: rgba(141, 141, 141, 0.16);
+  --hds-advanced-table-cell-surface-color-parent-hover: rgba(141, 141, 141, 0.16);
+  --hds-advanced-table-cell-surface-color-striped-hover: #373737; /** the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values. */
   --hds-alert-actions-margin-top: 15px;
   --hds-alert-border-color-critical: #da1e2866;
   --hds-alert-border-color-highlight: #0043ce66;
@@ -494,9 +499,6 @@
   --hds-table-cell-foreground-color-default: #c6c6c6;
   --hds-table-cell-foreground-color-hover: #f4f4f4;
   --hds-table-cell-foreground-color-selected: #f4f4f4;
-  --hds-table-cell-padding-horizontal-medium: 16px;
-  --hds-table-cell-padding-horizontal-short: 16px;
-  --hds-table-cell-padding-horizontal-tall: 16px;
   --hds-table-cell-padding-vertical-medium: 7px;
   --hds-table-cell-padding-vertical-short: 7px;
   --hds-table-cell-padding-vertical-tall: 7px;
@@ -512,9 +514,6 @@
   --hds-table-header-button-foreground-color-sorted-hover: #f4f4f4;
   --hds-table-header-button-surface-color-active: rgba(0, 0, 0, 0);
   --hds-table-header-button-surface-color-hover: rgba(0, 0, 0, 0);
-  --hds-table-header-cell-padding-horizontal-medium: 16px;
-  --hds-table-header-cell-padding-horizontal-short: 16px;
-  --hds-table-header-cell-padding-horizontal-tall: 16px;
   --hds-table-header-cell-padding-vertical-medium: 7px;
   --hds-table-header-cell-padding-vertical-short: 7px;
   --hds-table-header-cell-padding-vertical-tall: 7px;
@@ -523,7 +522,6 @@
   --hds-table-row-border-color-hover: #333333;
   --hds-table-row-border-color-selected-default: #525252;
   --hds-table-row-border-color-selected-hover: #474747;
-  --hds-table-row-border-width: 1px;
   --hds-tabs-indicator-height: 2px;
   --hds-tabs-tab-border-color-default: #393939;
   --hds-tabs-tab-border-color-hover: var(--hds-border-color-strong);

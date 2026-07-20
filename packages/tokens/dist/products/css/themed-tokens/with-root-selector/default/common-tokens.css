@@ -17,11 +17,9 @@
   --hds-advanced-table-cell-padding-vertical-short: var(--hds-table-cell-padding-vertical-short);
   --hds-advanced-table-cell-padding-vertical-tall: var(--hds-table-cell-padding-vertical-tall);
   --hds-advanced-table-cell-surface-color-default: var(--hds-surface-color-primary);
-  --hds-advanced-table-cell-surface-color-hover: var(--hds-table-cell-surface-color-hover);
   --hds-advanced-table-cell-surface-color-selected-default: var(--hds-table-cell-surface-color-selected-default);
   --hds-advanced-table-cell-surface-color-selected-hover: var(--hds-table-cell-surface-color-selected-hover);
   --hds-advanced-table-cell-surface-color-striped-default: var(--hds-table-cell-surface-color-striped-default);
-  --hds-advanced-table-cell-surface-color-striped-hover: var(--hds-table-cell-surface-color-striped-hover);
   --hds-advanced-table-header-button-foreground-color-active: var(--hds-table-header-button-foreground-color-active);
   --hds-advanced-table-header-button-foreground-color-hover: var(--hds-table-header-button-foreground-color-hover);
   --hds-advanced-table-header-button-foreground-color-sorted-active: var(--hds-table-header-button-foreground-color-sorted-active);
@@ -248,6 +246,13 @@
   --hds-product-waypoint-surface-color: #e0fcff;
   --hds-rich-tooltip-toggle-foreground-color-active: var(--hds-foreground-color-faint);
   --hds-rich-tooltip-toggle-foreground-color-hover: var(--hds-foreground-color-primary);
+  --hds-table-cell-padding-horizontal-medium: 16px;
+  --hds-table-cell-padding-horizontal-short: 16px;
+  --hds-table-cell-padding-horizontal-tall: 16px;
+  --hds-table-header-cell-padding-horizontal-medium: 16px;
+  --hds-table-header-cell-padding-horizontal-short: 16px;
+  --hds-table-header-cell-padding-horizontal-tall: 16px;
+  --hds-table-row-border-width: 1px;
   --hds-tabs-divider-height: 1px;
   --hds-tabs-indicator-transition-duration: 0.6s;
   --hds-tabs-indicator-transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1);

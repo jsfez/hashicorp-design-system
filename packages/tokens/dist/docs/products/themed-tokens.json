@@ -5566,9 +5566,25 @@
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
       "$value": "#ffffff",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "#E0E0E0",
+        "cds-g10": "#F1F1F1",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.hover}",
+        "$value": "{surface.color.primary}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E0E0E0",
+          "cds-g10": "#F1F1F1",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-hover",
@@ -5608,10 +5624,26 @@
     "hds-advanced-table-cell-surface-color-striped-hover": {
       "key": "{advanced-table.cell.surface.color.striped.hover}",
       "$type": "color",
-      "$value": "#fafafa",
+      "$value": "#ffffff",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "#E8E8E8",
+        "cds-g10": "#E8E8E8",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.striped.hover}",
+        "$value": "{surface.color.primary}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E8E8E8",
+          "cds-g10": "#E8E8E8",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.striped.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-striped-hover",
@@ -5668,6 +5700,114 @@
         "surface",
         "color",
         "selected",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-parent-hover": {
+      "key": "{advanced-table.cell.surface.color.parent.hover}",
+      "$type": "color",
+      "$value": "#ffffff",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.primary}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.parent.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-parent-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "parent",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-default": {
+      "key": "{advanced-table.cell.surface.color.nested.default}",
+      "$type": "color",
+      "$value": "#fafafa",
+      "$modes": {
+        "default": "#fafafa",
+        "cds-g0": "#e0e0e0",
+        "cds-g10": "#e0e0e0",
+        "cds-g90": "#525252",
+        "cds-g100": "#393939"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.faint}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.layerAccent01}",
+          "cds-g10": "{carbon.themes.g10.layerAccent01}",
+          "cds-g90": "{carbon.themes.g90.layerAccent01}",
+          "cds-g100": "{carbon.themes.g100.layerAccent01}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
+        "default"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-hover": {
+      "key": "{advanced-table.cell.surface.color.nested.hover}",
+      "$type": "color",
+      "$value": "#fafafa",
+      "$modes": {
+        "default": "#fafafa",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{surface.color.faint}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
         "hover"
       ]
     },
@@ -23197,24 +23337,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.short}"
       },
       "name": "hds-table-cell-padding-horizontal-short",
@@ -23234,24 +23360,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-cell-padding-horizontal-medium",
@@ -23271,24 +23383,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-cell-padding-horizontal-tall",
@@ -23703,24 +23801,10 @@
       "$type": "dimension",
       "$value": "1px",
       "unit": "px",
-      "$modes": {
-        "default": "1",
-        "cds-g0": "1",
-        "cds-g10": "1",
-        "cds-g90": "1",
-        "cds-g100": "1"
-      },
       "original": {
         "$type": "dimension",
         "$value": "1",
         "unit": "px",
-        "$modes": {
-          "default": "1",
-          "cds-g0": "1",
-          "cds-g10": "1",
-          "cds-g90": "1",
-          "cds-g100": "1"
-        },
         "key": "{table.row.border.width}"
       },
       "name": "hds-table-row-border-width",
@@ -23915,24 +23999,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.short}"
       },
       "name": "hds-table-header-cell-padding-horizontal-short",
@@ -23953,24 +24023,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-header-cell-padding-horizontal-medium",
@@ -23991,24 +24047,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-header-cell-padding-horizontal-tall",
@@ -33342,10 +33384,26 @@
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.12)",
+      "$value": "#e0e0e0",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#E0E0E0",
+        "cds-g10": "#F1F1F1",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.hover}",
+        "$value": "#E0E0E0",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E0E0E0",
+          "cds-g10": "#F1F1F1",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-hover",
@@ -33385,10 +33443,26 @@
     "hds-advanced-table-cell-surface-color-striped-hover": {
       "key": "{advanced-table.cell.surface.color.striped.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.12)",
+      "$value": "#e8e8e8",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#E8E8E8",
+        "cds-g10": "#E8E8E8",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.striped.hover}",
+        "$value": "#E8E8E8",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E8E8E8",
+          "cds-g10": "#E8E8E8",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.striped.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-striped-hover",
@@ -33445,6 +33519,114 @@
         "surface",
         "color",
         "selected",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-parent-hover": {
+      "key": "{advanced-table.cell.surface.color.parent.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.12)",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.parent.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-parent-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "parent",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-default": {
+      "key": "{advanced-table.cell.surface.color.nested.default}",
+      "$type": "color",
+      "$value": "#e0e0e0",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "#e0e0e0",
+        "cds-g10": "#e0e0e0",
+        "cds-g90": "#525252",
+        "cds-g100": "#393939"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.layerAccent01}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.layerAccent01}",
+          "cds-g10": "{carbon.themes.g10.layerAccent01}",
+          "cds-g90": "{carbon.themes.g90.layerAccent01}",
+          "cds-g100": "{carbon.themes.g100.layerAccent01}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
+        "default"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-hover": {
+      "key": "{advanced-table.cell.surface.color.nested.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.12)",
+      "$modes": {
+        "default": "#f4f4f4",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.white.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
         "hover"
       ]
     },
@@ -50992,24 +51174,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.short}"
       },
       "name": "hds-table-cell-padding-horizontal-short",
@@ -51029,24 +51197,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-cell-padding-horizontal-medium",
@@ -51066,24 +51220,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-cell-padding-horizontal-tall",
@@ -51498,24 +51638,10 @@
       "$type": "dimension",
       "$value": "1px",
       "unit": "px",
-      "$modes": {
-        "default": "1",
-        "cds-g0": "1",
-        "cds-g10": "1",
-        "cds-g90": "1",
-        "cds-g100": "1"
-      },
       "original": {
         "$type": "dimension",
         "$value": "1",
         "unit": "px",
-        "$modes": {
-          "default": "1",
-          "cds-g0": "1",
-          "cds-g10": "1",
-          "cds-g90": "1",
-          "cds-g100": "1"
-        },
         "key": "{table.row.border.width}"
       },
       "name": "hds-table-row-border-width",
@@ -51710,24 +51836,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.short}"
       },
       "name": "hds-table-header-cell-padding-horizontal-short",
@@ -51748,24 +51860,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-header-cell-padding-horizontal-medium",
@@ -51786,24 +51884,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-header-cell-padding-horizontal-tall",
@@ -61137,10 +61221,26 @@
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.12)",
+      "$value": "#f1f1f1",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "#E0E0E0",
+        "cds-g10": "#F1F1F1",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.hover}",
+        "$value": "#F1F1F1",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E0E0E0",
+          "cds-g10": "#F1F1F1",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-hover",
@@ -61180,10 +61280,26 @@
     "hds-advanced-table-cell-surface-color-striped-hover": {
       "key": "{advanced-table.cell.surface.color.striped.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.12)",
+      "$value": "#e8e8e8",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "#E8E8E8",
+        "cds-g10": "#E8E8E8",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.striped.hover}",
+        "$value": "#E8E8E8",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E8E8E8",
+          "cds-g10": "#E8E8E8",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.striped.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-striped-hover",
@@ -61240,6 +61356,114 @@
         "surface",
         "color",
         "selected",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-parent-hover": {
+      "key": "{advanced-table.cell.surface.color.parent.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.12)",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.parent.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-parent-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "parent",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-default": {
+      "key": "{advanced-table.cell.surface.color.nested.default}",
+      "$type": "color",
+      "$value": "#e0e0e0",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "#e0e0e0",
+        "cds-g10": "#e0e0e0",
+        "cds-g90": "#525252",
+        "cds-g100": "#393939"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.layerAccent01}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.layerAccent01}",
+          "cds-g10": "{carbon.themes.g10.layerAccent01}",
+          "cds-g90": "{carbon.themes.g90.layerAccent01}",
+          "cds-g100": "{carbon.themes.g100.layerAccent01}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
+        "default"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-hover": {
+      "key": "{advanced-table.cell.surface.color.nested.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.12)",
+      "$modes": {
+        "default": "#ffffff",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g10.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
         "hover"
       ]
     },
@@ -78787,24 +79011,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.short}"
       },
       "name": "hds-table-cell-padding-horizontal-short",
@@ -78824,24 +79034,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-cell-padding-horizontal-medium",
@@ -78861,24 +79057,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-cell-padding-horizontal-tall",
@@ -79293,24 +79475,10 @@
       "$type": "dimension",
       "$value": "1px",
       "unit": "px",
-      "$modes": {
-        "default": "1",
-        "cds-g0": "1",
-        "cds-g10": "1",
-        "cds-g90": "1",
-        "cds-g100": "1"
-      },
       "original": {
         "$type": "dimension",
         "$value": "1",
         "unit": "px",
-        "$modes": {
-          "default": "1",
-          "cds-g0": "1",
-          "cds-g10": "1",
-          "cds-g90": "1",
-          "cds-g100": "1"
-        },
         "key": "{table.row.border.width}"
       },
       "name": "hds-table-row-border-width",
@@ -79505,24 +79673,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.short}"
       },
       "name": "hds-table-header-cell-padding-horizontal-short",
@@ -79543,24 +79697,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-header-cell-padding-horizontal-medium",
@@ -79581,24 +79721,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-header-cell-padding-horizontal-tall",
@@ -88932,10 +89058,26 @@
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.16)",
+      "$value": "#474747",
+      "$modes": {
+        "default": "#393939",
+        "cds-g0": "#E0E0E0",
+        "cds-g10": "#F1F1F1",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.hover}",
+        "$value": "#474747",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E0E0E0",
+          "cds-g10": "#F1F1F1",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-hover",
@@ -88975,10 +89117,26 @@
     "hds-advanced-table-cell-surface-color-striped-hover": {
       "key": "{advanced-table.cell.surface.color.striped.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.16)",
+      "$value": "#474747",
+      "$modes": {
+        "default": "#393939",
+        "cds-g0": "#E8E8E8",
+        "cds-g10": "#E8E8E8",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.striped.hover}",
+        "$value": "#474747",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E8E8E8",
+          "cds-g10": "#E8E8E8",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.striped.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-striped-hover",
@@ -89035,6 +89193,114 @@
         "surface",
         "color",
         "selected",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-parent-hover": {
+      "key": "{advanced-table.cell.surface.color.parent.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.16)",
+      "$modes": {
+        "default": "#393939",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.parent.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-parent-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "parent",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-default": {
+      "key": "{advanced-table.cell.surface.color.nested.default}",
+      "$type": "color",
+      "$value": "#525252",
+      "$modes": {
+        "default": "#393939",
+        "cds-g0": "#e0e0e0",
+        "cds-g10": "#e0e0e0",
+        "cds-g90": "#525252",
+        "cds-g100": "#393939"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.layerAccent01}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.layerAccent01}",
+          "cds-g10": "{carbon.themes.g10.layerAccent01}",
+          "cds-g90": "{carbon.themes.g90.layerAccent01}",
+          "cds-g100": "{carbon.themes.g100.layerAccent01}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
+        "default"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-hover": {
+      "key": "{advanced-table.cell.surface.color.nested.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.16)",
+      "$modes": {
+        "default": "#393939",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g90.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
         "hover"
       ]
     },
@@ -106582,24 +106848,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.short}"
       },
       "name": "hds-table-cell-padding-horizontal-short",
@@ -106619,24 +106871,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-cell-padding-horizontal-medium",
@@ -106656,24 +106894,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-cell-padding-horizontal-tall",
@@ -107088,24 +107312,10 @@
       "$type": "dimension",
       "$value": "1px",
       "unit": "px",
-      "$modes": {
-        "default": "1",
-        "cds-g0": "1",
-        "cds-g10": "1",
-        "cds-g90": "1",
-        "cds-g100": "1"
-      },
       "original": {
         "$type": "dimension",
         "$value": "1",
         "unit": "px",
-        "$modes": {
-          "default": "1",
-          "cds-g0": "1",
-          "cds-g10": "1",
-          "cds-g90": "1",
-          "cds-g100": "1"
-        },
         "key": "{table.row.border.width}"
       },
       "name": "hds-table-row-border-width",
@@ -107300,24 +107510,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.short}"
       },
       "name": "hds-table-header-cell-padding-horizontal-short",
@@ -107338,24 +107534,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-header-cell-padding-horizontal-medium",
@@ -107376,24 +107558,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-header-cell-padding-horizontal-tall",
@@ -116727,10 +116895,26 @@
     "hds-advanced-table-cell-surface-color-hover": {
       "key": "{advanced-table.cell.surface.color.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.16)",
+      "$value": "#373737",
+      "$modes": {
+        "default": "#262626",
+        "cds-g0": "#E0E0E0",
+        "cds-g10": "#F1F1F1",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.hover}",
+        "$value": "#373737",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E0E0E0",
+          "cds-g10": "#F1F1F1",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-hover",
@@ -116770,10 +116954,26 @@
     "hds-advanced-table-cell-surface-color-striped-hover": {
       "key": "{advanced-table.cell.surface.color.striped.hover}",
       "$type": "color",
-      "$value": "rgba(141, 141, 141, 0.16)",
+      "$value": "#373737",
+      "$modes": {
+        "default": "#262626",
+        "cds-g0": "#E8E8E8",
+        "cds-g10": "#E8E8E8",
+        "cds-g90": "#474747",
+        "cds-g100": "#373737"
+      },
+      "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
       "original": {
         "$type": "color",
-        "$value": "{table.cell.surface.color.striped.hover}",
+        "$value": "#373737",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "#E8E8E8",
+          "cds-g10": "#E8E8E8",
+          "cds-g90": "#474747",
+          "cds-g100": "#373737"
+        },
+        "comment": "the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values.",
         "key": "{advanced-table.cell.surface.color.striped.hover}"
       },
       "name": "hds-advanced-table-cell-surface-color-striped-hover",
@@ -116830,6 +117030,114 @@
         "surface",
         "color",
         "selected",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-parent-hover": {
+      "key": "{advanced-table.cell.surface.color.parent.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.16)",
+      "$modes": {
+        "default": "#262626",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.primary}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.parent.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-parent-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "parent",
+        "hover"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-default": {
+      "key": "{advanced-table.cell.surface.color.nested.default}",
+      "$type": "color",
+      "$value": "#393939",
+      "$modes": {
+        "default": "#262626",
+        "cds-g0": "#e0e0e0",
+        "cds-g10": "#e0e0e0",
+        "cds-g90": "#525252",
+        "cds-g100": "#393939"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.layerAccent01}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.layerAccent01}",
+          "cds-g10": "{carbon.themes.g10.layerAccent01}",
+          "cds-g90": "{carbon.themes.g90.layerAccent01}",
+          "cds-g100": "{carbon.themes.g100.layerAccent01}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.default}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-default",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
+        "default"
+      ]
+    },
+    "hds-advanced-table-cell-surface-color-nested-hover": {
+      "key": "{advanced-table.cell.surface.color.nested.hover}",
+      "$type": "color",
+      "$value": "rgba(141, 141, 141, 0.16)",
+      "$modes": {
+        "default": "#262626",
+        "cds-g0": "rgba(141, 141, 141, 0.12)",
+        "cds-g10": "rgba(141, 141, 141, 0.12)",
+        "cds-g90": "rgba(141, 141, 141, 0.16)",
+        "cds-g100": "rgba(141, 141, 141, 0.16)"
+      },
+      "original": {
+        "$type": "color",
+        "$value": "{carbon.themes.g100.backgroundHover}",
+        "$modes": {
+          "default": "{surface.color.faint}",
+          "cds-g0": "{carbon.themes.white.backgroundHover}",
+          "cds-g10": "{carbon.themes.g10.backgroundHover}",
+          "cds-g90": "{carbon.themes.g90.backgroundHover}",
+          "cds-g100": "{carbon.themes.g100.backgroundHover}"
+        },
+        "key": "{advanced-table.cell.surface.color.nested.hover}"
+      },
+      "name": "hds-advanced-table-cell-surface-color-nested-hover",
+      "attributes": {
+        "category": "advanced-table"
+      },
+      "path": [
+        "advanced-table",
+        "cell",
+        "surface",
+        "color",
+        "nested",
         "hover"
       ]
     },
@@ -134377,24 +134685,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.short}"
       },
       "name": "hds-table-cell-padding-horizontal-short",
@@ -134414,24 +134708,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-cell-padding-horizontal-medium",
@@ -134451,24 +134731,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-cell-padding-horizontal-tall",
@@ -134883,24 +135149,10 @@
       "$type": "dimension",
       "$value": "1px",
       "unit": "px",
-      "$modes": {
-        "default": "1",
-        "cds-g0": "1",
-        "cds-g10": "1",
-        "cds-g90": "1",
-        "cds-g100": "1"
-      },
       "original": {
         "$type": "dimension",
         "$value": "1",
         "unit": "px",
-        "$modes": {
-          "default": "1",
-          "cds-g0": "1",
-          "cds-g10": "1",
-          "cds-g90": "1",
-          "cds-g100": "1"
-        },
         "key": "{table.row.border.width}"
       },
       "name": "hds-table-row-border-width",
@@ -135095,24 +135347,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.short}"
       },
       "name": "hds-table-header-cell-padding-horizontal-short",
@@ -135133,24 +135371,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.medium}"
       },
       "name": "hds-table-header-cell-padding-horizontal-medium",
@@ -135171,24 +135395,10 @@
       "$type": "dimension",
       "$value": "16px",
       "unit": "px",
-      "$modes": {
-        "default": "16",
-        "cds-g0": "16",
-        "cds-g10": "16",
-        "cds-g90": "16",
-        "cds-g100": "16"
-      },
       "original": {
         "$type": "dimension",
         "$value": "16",
         "unit": "px",
-        "$modes": {
-          "default": "16",
-          "cds-g0": "16",
-          "cds-g10": "16",
-          "cds-g90": "16",
-          "cds-g100": "16"
-        },
         "key": "{table.header.cell.padding.horizontal.tall}"
       },
       "name": "hds-table-header-cell-padding-horizontal-tall",

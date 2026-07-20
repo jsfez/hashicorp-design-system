@@ -159,11 +159,14 @@
   --hds-advanced-table-cell-padding-vertical-medium: 14px;
   --hds-advanced-table-cell-padding-vertical-tall: 22px;
   --hds-advanced-table-cell-surface-color-default: #ffffff;
-  --hds-advanced-table-cell-surface-color-hover: #ffffff;
+  --hds-advanced-table-cell-surface-color-hover: #ffffff; /** the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values. */
   --hds-advanced-table-cell-surface-color-striped-default: #fafafa;
-  --hds-advanced-table-cell-surface-color-striped-hover: #fafafa;
+  --hds-advanced-table-cell-surface-color-striped-hover: #ffffff; /** the carbon hover colors have alpha values so when a column is pinned + hovered, you can see the content behind the pinned column. These are the closest match to the carbon hover colors without alpha values. */
   --hds-advanced-table-cell-surface-color-selected-default: #ffffff;
   --hds-advanced-table-cell-surface-color-selected-hover: #ffffff;
+  --hds-advanced-table-cell-surface-color-parent-hover: #ffffff;
+  --hds-advanced-table-cell-surface-color-nested-default: #fafafa;
+  --hds-advanced-table-cell-surface-color-nested-hover: #fafafa;
   --hds-advanced-table-cell-foreground-color-default: #3b3d45;
   --hds-advanced-table-cell-foreground-color-hover: #3b3d45;
   --hds-advanced-table-cell-foreground-color-selected: #3b3d45;
