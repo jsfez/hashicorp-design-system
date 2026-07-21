@@ -1,14 +1,36 @@
 # @hashicorp/design-system-components
 
+## 6.4.1
+
+### Patch Changes
+
+<!-- START components/stepper/nav -->
+
+`StepperNav` - Added scren reader text for step number
+
+<!-- END -->
+
+<!-- START components/stepper/list -->
+
+`StepperList` - Added scren reader text for step number
+
+<!-- END -->
+
+<small class="doc-whats-new-changelog-metadata">[#3993](https://github.com/hashicorp/design-system/pull/3993)</small>
+
+<div class="doc-whats-new-changelog-separator"></div>
+
+**🔄 Updated dependencies:**
+
+- @hashicorp/flight-icons@5.1.0
+
 ## 6.4.0
 
 [6.4.0 documentation](https://hds-website-6-4-0.vercel.app/)
 
 ### Minor Changes
 
-
 `FilterBar` - Added a `searchAriaLabel` feature to expose the value of the search input aria-label, allowing the value to be customized
-
 
 <small class="doc-whats-new-changelog-metadata">[#3980](https://github.com/hashicorp/design-system/pull/3980)</small>
 

@@ -165,7 +165,7 @@ importers:
         specifier: workspace:^5.1.0
         version: link:../tokens
       '@hashicorp/flight-icons':
-        specifier: workspace:^5.0.0
+        specifier: workspace:^5.1.0
         version: link:../flight-icons
       '@lezer/highlight':
         specifier: ^1.2.1
