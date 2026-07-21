@@ -9,7 +9,7 @@
     "test:argos": "playwright test --config playwright.config.ts"
   },
   "devDependencies": {
-    "@argos-ci/playwright": "^5.0.4",
+    "@argos-ci/playwright": "^7.3.6",
     "@playwright/test": "^1.56.0"
   }
 }

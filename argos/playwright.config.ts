@@ -22,10 +22,6 @@ export default defineConfig({
     baseURL: `http://127.0.0.1:${port}`,
     contextOptions: { reducedMotion: 'reduce' },
   },
-  // Argos prefixes every screenshot with the project name. Naming the project
-  // keeps the captures under `showcase/`; leaving it out would prefix them with
-  // an empty segment and name them `/Accordion - 1280`.
-  projects: [{ name: 'showcase' }],
   webServer: {
     command: `node argos/serve.mjs`,
     // `cwd` is explicit because Playwright runs `command` from the folder
