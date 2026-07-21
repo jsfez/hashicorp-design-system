@@ -165,6 +165,24 @@ const revealLazyContent = (page: Page) =>
     await nextFrame();
   });
 
+// Nudge the viewport by a pixel and back.
+//
+// A widget that mounts while the page is being scrolled measures itself against
+// a layout that is still moving: CodeMirror ends up with one more line-number
+// gutter element than it has lines, and which editors it happens to differs
+// from run to run. The nudge forces every `ResizeObserver` to fire once more,
+// on a page that is now standing still.
+const remeasure = async (page: Page, width: number, height: number) => {
+  await page.setViewportSize({ width, height: height + 1 });
+  await page.evaluate(
+    () =>
+      new Promise((resolve) => {
+        requestAnimationFrame(() => setTimeout(resolve, 50));
+      }),
+  );
+  await page.setViewportSize({ width, height });
+};
+
 const settle = async (page: Page) => {
   await page.evaluate(() => document.fonts.ready);
 
@@ -224,6 +242,7 @@ for (const snapshot of snapshots) {
       await page.goto(snapshot.path, { waitUntil: 'networkidle' });
       await revealLazyContent(page);
       await snapshot.prepare?.(page);
+      await remeasure(page, width, MIN_HEIGHT);
       await settle(page);
 
       // Some pages show a loader or a progress indicator on purpose and stay
