@@ -161,16 +161,6 @@ export default class HdsAccordionItem extends Component<HdsAccordionItemSignatur
     >
       <:toggle as |t|>
         <div class="hds-accordion-item__toggle">
-          <HdsAccordionItemButton
-            @isOpen={{t.isOpen}}
-            @onClickToggle={{t.onClickToggle}}
-            @contentId={{t.contentId}}
-            @ariaLabel={{@ariaLabel}}
-            @ariaLabelledBy={{this.ariaLabelledBy}}
-            @size={{this.size}}
-            @parentContainsInteractive={{this.containsInteractive}}
-          />
-
           <HdsTextBody
             @tag={{this.titleTag}}
             @size={{this.toggleTextSize}}
@@ -181,6 +171,16 @@ export default class HdsAccordionItem extends Component<HdsAccordionItemSignatur
           >
             {{yield to="toggle"}}
           </HdsTextBody>
+
+          <HdsAccordionItemButton
+            @isOpen={{t.isOpen}}
+            @onClickToggle={{t.onClickToggle}}
+            @contentId={{t.contentId}}
+            @ariaLabel={{@ariaLabel}}
+            @ariaLabelledBy={{this.ariaLabelledBy}}
+            @size={{this.size}}
+            @parentContainsInteractive={{this.containsInteractive}}
+          />
         </div>
       </:toggle>
 
